@@ -862,7 +862,7 @@ body{
 
     font-size:13px;
 
-    color:#777;
+    color: #000;;
 }
 
 
@@ -1054,7 +1054,7 @@ body{
     padding-left: 20px;
 }
 
-.divider{
+.article-info .divider{
     width: 1px;
     height: 16px;
     background: #d9d9d9;
