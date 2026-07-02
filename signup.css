@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family:'DM Sans',sans-serif;
+}
+
+body{
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    width: 380px;
+    text-align: center;
+}
+
+.login-box h1{
+    color: #2f66e8;
+    font-size: 56px;
+}
+
+h2{
+    color: #1d2357;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.subtitle{
+    color: #8c8c8c;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+form{
+    text-align: left;
+}
+
+.label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #1d2357;
+}
+
+input{
+    width: 100%;
+    height: 48px;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 0 15px;
+    margin: 8px ;
+    margin-bottom: 18px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus{
+    border-color: #2f66e8;
+}
+
+.password-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-title a{
+    color: #2f66e8;
+    text-decoration: none;
+    font-size: 13px;
+
+
+}
+
+button{
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background: #1677f2;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    background: #005fe0;
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    margin: 22px 0;
+}
+
+.divider span{
+    flex: 1;
+    height: 1px;
+    background: #e5e5e5;
+}
+
+.divider p{
+    margin: 0 15px;
+    color: #777;
+    font-size: 14px;
+}
+
+.google-btn{
+    background: #fff;
+    color: #555;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.google-btn img{
+    width: 22px;
+    height: 22px;
+}
+
+.signup{
+    margin-top: 25px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.signup a{
+    color: #2f66e8;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media(max-width:500px){
+
+    .login-box{
+        width:90%;
+    }
+
+    .logo{
+        font-size:44px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+}
