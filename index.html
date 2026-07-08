@@ -9,13 +9,19 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
 
 
 <section class="hero">
+
+
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="Image/bg-video.mp4" type="video/mp4">
+        
+    </video>
 
 
      <nav class="navbar">
@@ -30,13 +36,19 @@
         </div>
 
         <div class="nav-right">
-            <a href="#">Sign Up</a>
+    <a href="signup.html">Sign Up</a>
 
-            <button class="login-btn">
-                Log In
-            </button>
+    <img src="Image/hamburger menu.svg"
+         class="menu-icon"
+         id="openMenu"
+         alt="Menu">
+    </div>
 
-            <i class="fa-solid fa-bars"></i>
+   
+
+            
+
+  
         </div>
 
     </nav>
@@ -52,49 +64,64 @@
 
     </div>
 
+   <div class="hero-content">
+
+    <!-- Search Card -->
     <div class="search-card">
 
         <div class="box">
-             <img src="Image/location-marker.svg" alt="Location" class="box-icon">
+            <img src="Image/location-marker.svg" alt="Location" class="box-icon">
 
-            
             <div>
                 <h4>Where</h4>
-                <p>Search destinations</p>
+                 <input type="text" placeholder="Search destinations">
             </div>
         </div>
 
         <div class="box">
             <img src="Image/calendar-check.svg" alt="Calendar" class="box-icon">
+
             <div>
                 <h4>When</h4>
-                <p>February 06 - March 14</p>
+                <input type="date">
             </div>
         </div>
 
         <div class="box">
-             <img src="Image/flag.svg" alt="Tour Type" class="box-icon">
+            <img src="Image/flag.svg" alt="Tour Type" class="box-icon">
+
             <div>
-                <h4>Tour Type</h4>
-                <p>All Tour</p>
+                   <select>
+            <option>All Tour</option>
+            <option>Adventure</option>
+            <option>Nature</option>
+            <option>Cultural</option>
+        </select>
+
             </div>
         </div>
 
         <button class="box">
-            <img src="Image/search.svg" alt="Search Box" class="searchbox-icon">
-            Search
+            <img src="Image/search.svg" alt="Search" class="searchbox-icon">
+            <span>Search</span>
         </button>
-
-        
 
     </div>
 
-       <button class="hero-arrow right-arrow">
-        <img src="Image/rightButton.svg" alt="Right-arrow">
-    </button>
-    <button class="hero-arrow left-arrow">
-        <img src="Image/leftButton.svg" alt="Left-arrow">
-    </button>
+    <!-- Navigation Arrows -->
+    <div class="hero-arrows">
+
+        <button class="hero-arrow left-arrow" aria-label="Previous">
+            <img src="Image/leftButton.svg" alt="Previous">
+        </button>
+
+        <button class="hero-arrow right-arrow" aria-label="Next">
+            <img src="Image/rightButton.svg" alt="Next">
+        </button>
+
+    </div>
+
+</div>
 
 </section>
 
@@ -122,7 +149,7 @@
 
         
          <div class="heart">
-            <img src="Image/Button.svg" alt="Favorite">
+            <img src="Image/heart.svg" alt="Favorite">
         </div> 
     </div>
 
@@ -176,7 +203,7 @@
 
         
         <div class="heart">
-            <img src="Image/Button.svg" alt="Favorite">
+            <img src="Image/heart.svg" alt="Favorite">
         </div>
     </div>
 
@@ -226,11 +253,11 @@
         <div class="card">
 
     <div class="card-image">
-        <img src="Image/everest.jpg" alt="Everest">
+        <img src="Image/Walk To Tranquillity_ 5 Must-Visit Spiritual_.jpeg" alt="Everest">
 
         
          <div class="heart">
-            <img src="Image/Button.svg" alt="Favorite">
+            <img src="Image/heart.svg" alt="Favorite">
         </div> 
     </div>
 
@@ -242,12 +269,12 @@
         </p>
 
         <h3>
-            Everest Base Camp Trek –
+            Everest three Pass Trek –
             Classic Adventure
         </h3>
 
         <div class="rating">
-              <img src="Image/Vectorstar.svg" alt="">
+              <img src="Image/Vectorstar.svg" alt="star">
           <img src="Image/Vectorstar.svg" alt="star">
     <img src="Image/Vectorstar.svg" alt="star">
     <img src="Image/Vectorstar.svg" alt="star">
@@ -279,11 +306,11 @@
         <div class="card">
 
     <div class="card-image">
-        <img src="Image/everest.jpg" alt="Everest">
+        <img src="Image/Langtang-Valley-Trek.webp" alt="Langtang-Valley-Trek">
 
         
         <div class="heart">
-            <img src="Image/Button.svg" alt="Favorite">
+            <img src="Image/heart.svg" alt="Favorite">
         </div>
     </div>
 
@@ -291,16 +318,16 @@
 
         <p class="location">
             <img src="Image/location.svg" alt="location">
-            Everest, Nepal
+            Langtang, Nepal
         </p>
 
         <h3>
-            Everest Base Camp Trek –
+            Langtang Trek  – <br>
             Classic Adventure
         </h3>
 
         <div class="rating">
-              <img src="Image/Vectorstar.svg" alt="">
+              <img src="Image/Vectorstar.svg" alt="star">
           <img src="Image/Vectorstar.svg" alt="star">
     <img src="Image/Vectorstar.svg" alt="star">
     <img src="Image/Vectorstar.svg" alt="star">
@@ -327,19 +354,328 @@
 </div>
 
 
+  <!-- Card no 5 -->
+         <div class="card">
+
+    <div class="card-image">
+        <img src="Image/annapurna_circuit_01_3aa5646dc7.webp" alt="annapurna_circuit">
+
+        
+        <div class="heart">
+            <img src="Image/heart.svg" alt="Favorite">
+        </div>
+    </div>
+
+    <div class="card-content">
+
+        <p class="location">
+            <img src="Image/location.svg" alt="location">
+            Annapurna, Nepal
+        </p>
+
+        <h3>
+            Annapurna circuit trek–
+            Classic Adventure
+        </h3>
+
+        <div class="rating">
+              <img src="Image/Vectorstar.svg" alt="star">
+          <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+
+    <span>4.8 (243)</span>
         </div>
 
-        <div class="slider-buttons">
+        <hr class="divider">
 
-    <button id="prev" class="slider-btn">
-        <img src="Image/Buttonleft.svg" alt="Previous">
-    </button>
+        <div class="card-footer">
 
-    <button id="next" class="slider-btn">
-        <img src="Image/Buttonright.svg" alt="Next">
-    </button>
+            <span class="days">
+                <img src="Image/clock3.svg" alt="clock">
+                12–14 days
+            </span>
 
-</div>
+            <span>From <strong>$189.25</strong></span>
+
+          </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Card no 6 -->
+
+          <div class="card">
+
+    <div class="card-image">
+        <img src="Image/Manaslu Circuit Trek .avif" alt="Manaslu Circuit Trek">
+
+        
+        <div class="heart">
+            <img src="Image/heart.svg" alt="Favorite">
+        </div>
+    </div>
+
+    <div class="card-content">
+
+        <p class="location">
+            <img src="Image/location.svg" alt="location">
+            Gorkha, Nepal
+        </p>
+
+        <h3>
+            Manaslu Circuit Trek –
+            Classic Adventure
+        </h3>
+
+        <div class="rating">
+              <img src="Image/Vectorstar.svg" alt="star">
+          <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+
+    <span>4.8 (243)</span>
+        </div>
+
+        <hr class="divider">
+
+        <div class="card-footer">
+
+            <span class="days">
+                <img src="Image/clock3.svg" alt="clock">
+                12–14 days
+            </span>
+
+            <span>From <strong>$189.25</strong></span>
+
+          </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Card no 7 -->
+
+          <div class="card">
+
+    <div class="card-image">
+        <img src="Image/Peaky Peak Trek.jpeg" alt="Everest">
+
+        
+        <div class="heart">
+            <img src="Image/heart.svg" alt="Favorite">
+        </div>
+    </div>
+
+    <div class="card-content">
+
+        <p class="location">
+            <img src="Image/location.svg" alt="location">
+            Solukhumbu, Nepal
+        </p>
+
+        <h3>
+            Peaky Peak Trek –
+            Classic Adventure
+        </h3>
+
+        <div class="rating">
+              <img src="Image/Vectorstar.svg" alt="star">
+          <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+
+    <span>4.8 (243)</span>
+        </div>
+
+        <hr class="divider">
+
+        <div class="card-footer">
+
+            <span class="days">
+                <img src="Image/clock3.svg" alt="clock">
+                12–14 days
+            </span>
+
+            <span>From <strong>$189.25</strong></span>
+
+          </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Card no 8 -->
+
+          <div class="card">
+
+    <div class="card-image">
+        <img src="Image/Langtang-Gosaikunda-Trek-575x490.jpg" alt="Lantang">
+
+        
+        <div class="heart">
+            <img src="Image/heart.svg" alt="Favorite">
+        </div>
+    </div>
+
+    <div class="card-content">
+
+        <p class="location">
+            <img src="Image/location.svg" alt="location">
+            Langtang, Nepal
+        </p>
+
+        <h3>
+            Langtang Gosaikunda Trek –
+            Classic Adventure
+        </h3>
+
+        <div class="rating">
+              <img src="Image/Vectorstar.svg" alt="star">
+          <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+
+    <span>4.8 (243)</span>
+        </div>
+
+        <hr class="divider">
+
+        <div class="card-footer">
+
+            <span class="days">
+                <img src="Image/clock3.svg" alt="clock">
+                12–14 days
+            </span>
+
+            <span>From <strong>$189.25</strong></span>
+
+          </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Card no 9 -->
+
+          <div class="card">
+
+    <div class="card-image">
+        <img src="Image/everest.jpg" alt="Everest">
+
+        
+        <div class="heart">
+            <img src="Image/heart.svg" alt="Favorite">
+        </div>
+    </div>
+
+    <div class="card-content">
+
+        <p class="location">
+            <img src="Image/location.svg" alt="location">
+            Annapurna, Nepal
+        </p>
+
+        <h3>
+            Annapurna circuit trek–
+            Classic Adventure
+        </h3>
+
+        <div class="rating">
+              <img src="Image/Vectorstar.svg" alt="star">
+          <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+
+    <span>4.8 (243)</span>
+        </div>
+
+        <hr class="divider">
+
+        <div class="card-footer">
+
+            <span class="days">
+                <img src="Image/clock3.svg" alt="clock">
+                12–14 days
+            </span>
+
+            <span>From <strong>$189.25</strong></span>
+
+          </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Card no 10 -->
+
+          <div class="card">
+
+    <div class="card-image">
+        <img src="Image/everest.jpg" alt="Everest">
+
+        
+        <div class="heart">
+            <img src="Image/heart.svg" alt="Favorite">
+        </div>
+    </div>
+
+    <div class="card-content">
+
+        <p class="location">
+            <img src="Image/location.svg" alt="location">
+            Annapurna, Nepal
+        </p>
+
+        <h3>
+            Annapurna circuit trek–
+            Classic Adventure
+        </h3>
+
+        <div class="rating">
+              <img src="Image/Vectorstar.svg" alt="star">
+          <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+    <img src="Image/Vectorstar.svg" alt="star">
+
+    <span>4.8 (243)</span>
+        </div>
+
+        <hr class="divider">
+
+        <div class="card-footer">
+
+            <span class="days">
+                <img src="Image/clock3.svg" alt="clock">
+                12–14 days
+            </span>
+
+            <span>From <strong>$189.25</strong></span>
+
+          </div>
+
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
 
         
     
@@ -989,8 +1325,27 @@
 
 </footer>
 
+<!-- menu -->
 
+<!-- <div class="sidebar" id="sidebar">
 
+    <button class="close-btn" id="closeMenu">
+        &times;
+    </button>
+
+    <h2>Main Menu</h2>
+
+    <ul>
+        <li><a href="index.html">Home <span>&rsaquo;</span></a></li>
+        <li><a href="#">Destination <span>&rsaquo;</span></a></li>
+        <li><a href="#">About <span>&rsaquo;</span></a></li>
+        <li><a href="#">Blog <span>&rsaquo;</span></a></li>
+        <li><a href="#">Faq <span>&rsaquo;</span></a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+</div> -->
 
 </body>
+
 </html>

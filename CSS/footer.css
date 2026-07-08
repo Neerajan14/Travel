@@ -1,0 +1,119 @@
+.footer{
+    background:#3464F6;
+    color:#fff;
+    padding:70px 0 30px;
+}
+
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.contact-expert{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.contact-expert img{
+    width:34px;
+}
+
+.contact-expert p{
+    font-size:16px;
+}
+
+.contact-expert a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.social{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.social span{
+    margin-right:10px;
+}
+
+.social img{
+    width:22px;
+    height:22px;
+}
+
+.footer hr{
+    border:none;
+    border-top:1px solid rgba(255,255,255,.2);
+    margin:35px 0 50px;
+}
+
+
+
+.footer-content{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 2fr;
+    gap:60px;
+}
+
+.footer-column h3{
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+.footer-column p{
+    color:#dbe4ff;
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+.footer-column a{
+    display:block;
+    color:#dbe4ff;
+    text-decoration:none;
+    margin-bottom:12px;
+    transition:.3s;
+}
+
+.footer-column a:hover{
+    color:#fff;
+}
+
+
+
+.newsletter{
+    display:flex;
+    margin-top:20px;
+}
+
+.newsletter input{
+    flex:1;
+    height:48px;
+    border:none;
+    outline:none;
+    border-radius:10px 0 0 10px;
+    padding:0 15px;
+}
+
+.newsletter button{
+    width:55px;
+    border:none;
+    background:#fff;
+    border-radius:0 10px 10px 0;
+    cursor:pointer;
+}
+
+.newsletter button img{
+    width:18px;
+}
+
+
+
+.copyright{
+    margin-top:60px;
+    font-size:14px;
+    color:#dbe4ff;
+}
