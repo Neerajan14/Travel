@@ -1,0 +1,447 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'DM Sans',sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#222;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Breadcrumb */
+
+.breadcrumb{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    font-size:14px;
+    margin:35px 0 20px;
+    color:#777;
+}
+
+.breadcrumb a{
+    text-decoration:none;
+    color:#777;
+}
+
+.breadcrumb .active{
+    color:#222;
+    font-weight:600;
+}
+
+/* Heading */
+
+.details h1{
+    font-size:40px;
+    font-weight:800;
+    color:#222;
+    max-width:900px;
+    line-height:1.3;
+    margin-bottom:18px;
+}
+
+/* Info */
+
+.tour-info{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.info-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:15px;
+    color:#666;
+}
+
+.info-item img{
+    width:18px;
+    height:18px;
+    object-fit:contain;
+}
+
+.reviews{
+    color:#666;
+}
+
+.location{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.location img{
+    width:18px;
+}
+
+.rating{
+    color:#ffb400;
+    font-size:18px;
+}
+
+.booked{
+    font-weight:600;
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:12px;
+}
+
+.big-image img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+.small-gallery{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.small-gallery img,
+.last-image img{
+    width:100%;
+    height:254px;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+.last-image{
+    position:relative;
+}
+
+.last-image span{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.45);
+    color:#fff;
+    font-size:42px;
+    font-weight:700;
+    border-radius:6px;
+}
+
+/* overview */
+.overview-section{
+    width:90%;
+    max-width:1200px;
+    margin:70px auto;
+    display:grid;
+    grid-template-columns:2fr 360px;
+    gap:40px;
+    align-items:start;
+}
+
+/* Features */
+
+.feature-box{
+    border:1px solid #e6e6e6;
+    border-radius:10px;
+    padding:30px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-bottom:50px;
+}
+
+.feature-item{
+    display:flex;
+    gap:15px;
+}
+
+.feature-item img{
+    width:22px;
+    height:22px;
+    margin-top:3px;
+}
+
+.feature-item h4{
+    font-size:16px;
+    color:#1f2937;
+    margin-bottom:6px;
+}
+
+.feature-item p{
+    color:#666;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* Tour Overview */
+
+.tour-overview h2{
+    font-size:38px;
+    margin-bottom:25px;
+}
+
+.tour-overview p{
+    line-height:1.9;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.tour-overview h3{
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.tour-overview ul{
+    padding-left:20px;
+}
+
+.tour-overview li{
+    margin-bottom:14px;
+    color:#555;
+    line-height:1.8;
+}
+
+/* Booking Card */
+
+.booking-card{
+    border:1px solid #e5e5e5;
+    border-radius:10px;
+    padding:25px;
+    position:sticky;
+    top:120px;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+.booking-card h3{
+    margin-bottom:25px;
+}
+
+.booking-card label{
+    display:block;
+    font-weight:600;
+    margin:18px 0 8px;
+}
+
+.booking-card input,
+.booking-card select{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.booking-card small{
+    display:block;
+    text-align:center;
+    margin-top:30px;
+    color:#777;
+}
+
+.booking-card h2{
+    text-align:center;
+    color:#2E5BFF;
+    font-size:42px;
+    margin:10px 0 25px;
+}
+
+.book-btn{
+    width:100%;
+    padding:15px;
+    background:#2E5BFF;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    margin-bottom:12px;
+}
+
+.outline-btn{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    background:#fff;
+    border-radius:6px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+
+.outline-btn img{
+    width:18px;
+}
+
+
+
+/* What's Included */
+
+.included-section{
+    width:90%;
+    max-width:1200px;
+    margin:70px auto;
+    padding-bottom:60px;
+    border-bottom:1px solid #ececec;
+}
+
+.included-section h2{
+    font-size:38px;
+    font-weight:700;
+    color:#1f2b5b;
+    margin-bottom:35px;
+}
+
+.included-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+.included-list,
+.excluded-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.include-item,
+.exclude-item{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+}
+
+.include-item img,
+.exclude-item img{
+    width:18px;
+    margin-top:3px;
+}
+
+.include-item span,
+.exclude-item span{
+    font-size:15px;
+    color:#555;
+    line-height:1.7;
+}
+
+
+
+
+
+
+
+
+.section-divider{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+    border:none;
+    border-top:1px solid #e5e7eb;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .included-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .included-section h2{
+        font-size:30px;
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .overview-section{
+        grid-template-columns:1fr;
+    }
+
+    .feature-box{
+        grid-template-columns:1fr;
+    }
+
+    .booking-card{
+        position:static;
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .big-image img{
+        height:420px;
+    }
+
+    .small-gallery img,
+    .last-image img{
+        height:180px;
+    }
+
+    .details h1{
+        font-size:30px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .small-gallery{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .details h1{
+        font-size:24px;
+    }
+
+    .tour-info{
+        gap:12px;
+        font-size:14px;
+    }
+
+    .big-image img{
+        height:280px;
+    }
+
+    .small-gallery img,
+    .last-image img{
+        height:130px;
+    }
+
+    .last-image span{
+        font-size:30px;
+    }
+
+}
+
+
+/* overview */
+
