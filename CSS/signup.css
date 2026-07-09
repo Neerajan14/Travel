@@ -69,19 +69,42 @@ input:focus{
     border-color: #2f66e8;
 }
 
-.password-title{
+.password-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 8px;
 }
 
-.password-title a{
+
+
+.password-title label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1d2357;
+}
+
+.password-title a {
     color: #2f66e8;
     text-decoration: none;
     font-size: 13px;
-
-
 }
+
+
+.forgot-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 18px;
+}
+
+.forgot-row a {
+    color: #2f66e8;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+
 
 button{
     width: 100%;
@@ -158,6 +181,20 @@ button:hover{
 
     h2{
         font-size:24px;
+    }
+
+       .divider {
+        margin: 18px 0;
+    }
+
+    .divider span {
+        background: #e5e5e5;
+    }
+
+    .divider p {
+        font-size: 12px;
+        color: #999;
+        margin: 0 12px;
     }
 
 }

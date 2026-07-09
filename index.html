@@ -15,6 +15,9 @@
 <body>
 
 
+
+
+
 <section class="hero">
 
 
@@ -26,11 +29,9 @@
 
    <header class="navbar">
  
-  <button class="hamburger" aria-label="Menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+ <button class="hamburger" id="menuToggle" aria-label="Menu">
+  <img src="Icons/hamburger menu.svg" alt="Menu" class="hamburger-img">
+</button>
  
   <a href="#" class="logo">Travel</a>
  
@@ -44,18 +45,49 @@
  
   <a href="signup.html" class="signup">Sign up</a>
  
-  <div class="mobile-icons">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-      <circle cx="11" cy="11" r="7"></circle>
-      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-    </svg>
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-      <circle cx="12" cy="8" r="4"></circle>
-      <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
-    </svg>
-  </div>
+ <div class="mobile-icons">
+  <a href="#"><img src="Icons/searchmobile.svg" alt="Search" class="mobile-icon-img"></a>
+  <a href="#"><img src="Icons/user.svg" alt="Account" class="mobile-icon-img"></a>
+</div>
+
+
+<div class="mobile-search-bar" id="mobileSearchBar">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="11" cy="11" r="7"></circle>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+  <input type="text" placeholder="Search destinations or activities">
+</div>
  
 </header>
+
+<!-- Overlay -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- Slide-in menu panel -->
+  <aside class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+      <h3>Main Menu</h3>
+      <button class="close-menu" id="closeMenu" aria-label="Close menu">&times;</button>
+    </div>
+
+    <nav class="side-menu-links">
+      <a href="#">Home <span>&rsaquo;</span></a>
+      <a href="#">Destination <span>&rsaquo;</span></a>
+      <a href="#">About <span>&rsaquo;</span></a>
+      <a href="#">Blog <span>&rsaquo;</span></a>
+      <a href="#">Faq <span>&rsaquo;</span></a>
+      <a href="#" class="contact-link">Contact</a>
+    </nav>
+
+    <div class="side-menu-social">
+      <a href="#"><img src="Icons/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="Icons/twitter.svg" alt="Twitter"></a>
+      <a href="#"><img src="Icons/instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="Icons/linkedin.svg" alt="LinkedIn"></a>
+    </div>
+  </aside>
+
     
 
     <div class="hero-content">
@@ -75,7 +107,7 @@
     <div class="search-card">
 
         <div class="box">
-            <img src="Image/location-marker.svg" alt="Location" class="box-icon">
+            <img src="Icons/location-marker.svg" alt="Location" class="box-icon">
 
             <div>
                 <h4>Where</h4>
@@ -84,7 +116,7 @@
         </div>
 
         <div class="box">
-            <img src="Image/calendar-check.svg" alt="Calendar" class="box-icon">
+            <img src="Icons/calendar-check.svg" alt="Calendar" class="box-icon">
 
             <div>
                 <h4>When</h4>
@@ -93,7 +125,7 @@
         </div>
 
         <div class="box">
-            <img src="Image/flag.svg" alt="Tour Type" class="box-icon">
+            <img src="Icons/flag.svg" alt="Tour Type" class="box-icon">
 
             <div>
                 <h4>Tour Type</h4>
@@ -107,9 +139,9 @@
             </div>
         </div>
 
-        <button class="box">
-            <img src="Image/search.svg" alt="Search" class="searchbox-icon">
-            <span>Search</span>
+       <button class="search-btn">
+       <img src="Icons/search.svg" alt="Search" class="searchbox-icon">
+        <span>Search</span>
         </button>
 
     </div>
@@ -118,11 +150,11 @@
     <div class="hero-arrows">
 
         <button class="hero-arrow left-arrow" aria-label="Previous">
-            <img src="Image/leftButton.svg" alt="Previous">
+            <img src="Icons/leftButton.svg" alt="Previous">
         </button>
 
         <button class="hero-arrow right-arrow" aria-label="Next">
-            <img src="Image/rightButton.svg" alt="Next">
+            <img src="Icons/rightButton.svg" alt="Next">
         </button>
 
     </div>
@@ -155,14 +187,14 @@
 
         
          <div class="heart">
-            <img src="Image/heart.svg" alt="Favorite">
+            <img src="Icons/heart.svg" alt="Favorite">
         </div> 
     </div>
 
     <div class="card-content">
 
         <p class="location">
-            <img src="Image/location.svg" alt="location">
+            <img src="Icons/location.svg" alt="location">
             Everest, Nepal
         </p>
 
@@ -172,11 +204,11 @@
         </h3>
 
         <div class="rating">
-              <img src="Image/Vectorstar.svg" alt="star">
-          <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
+              <img src="Icons/Vectorstar.svg" alt="star">
+          <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
 
     <span>4.8 (243)</span>
         </div>
@@ -186,7 +218,7 @@
         <div class="card-footer">
 
             <span class="days">
-                <img src="Image/clock3.svg" alt="clock">
+                <img src="Icons/clock3.svg" alt="clock">
                 12–14 days
             </span>
 
@@ -209,14 +241,14 @@
 
         
         <div class="heart">
-            <img src="Image/heart.svg" alt="Favorite">
+            <img src="Icons/heart.svg" alt="Favorite">
         </div>
     </div>
 
     <div class="card-content">
 
         <p class="location">
-            <img src="Image/location.svg" alt="location">
+            <img src="Icons/location.svg" alt="location">
             Annapurna, Nepal
         </p>
 
@@ -226,11 +258,11 @@
         </h3>
 
          <div class="rating">
-              <img src="Image/Vectorstar.svg" alt="">
-          <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
+              <img src="Icons/Vectorstar.svg" alt="">
+          <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
 
     <span>4.8 (243)</span>
         </div>
@@ -240,7 +272,7 @@
         <div class="card-footer">
 
             <span class="days">
-                <img src="Image/clock3.svg" alt="clock">
+                <img src="Icons/clock3.svg" alt="clock">
                 12–14 days
             </span>
 
@@ -263,14 +295,14 @@
 
         
          <div class="heart">
-            <img src="Image/heart.svg" alt="Favorite">
+            <img src="Icons/heart.svg" alt="Favorite">
         </div> 
     </div>
 
     <div class="card-content">
 
         <p class="location">
-            <img src="Image/location.svg" alt="location">
+            <img src="Icons/location.svg" alt="location">
             Everest, Nepal
         </p>
 
@@ -280,11 +312,11 @@
         </h3>
 
         <div class="rating">
-              <img src="Image/Vectorstar.svg" alt="star">
-          <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
+              <img src="Icons/Vectorstar.svg" alt="star">
+          <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
 
     <span>4.8 (243)</span>
         </div>
@@ -294,7 +326,7 @@
         <div class="card-footer">
 
             <span class="days">
-                <img src="Image/clock3.svg" alt="clock">
+                <img src="Icons/clock3.svg" alt="clock">
                 12–14 days
             </span>
 
@@ -316,14 +348,14 @@
 
         
         <div class="heart">
-            <img src="Image/heart.svg" alt="Favorite">
+            <img src="Icons/heart.svg" alt="Favorite">
         </div>
     </div>
 
     <div class="card-content">
 
         <p class="location">
-            <img src="Image/location.svg" alt="location">
+            <img src="Icons/location.svg" alt="location">
             Langtang, Nepal
         </p>
 
@@ -333,11 +365,11 @@
         </h3>
 
         <div class="rating">
-              <img src="Image/Vectorstar.svg" alt="star">
-          <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
+              <img src="Icons/Vectorstar.svg" alt="star">
+          <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
 
     <span>4.8 (243)</span>
         </div>
@@ -347,7 +379,7 @@
         <div class="card-footer">
 
             <span class="days">
-                <img src="Image/clock3.svg" alt="clock">
+                <img src="Icons/clock3.svg" alt="clock">
                 12–14 days
             </span>
 
@@ -368,14 +400,14 @@
 
         
         <div class="heart">
-            <img src="Image/heart.svg" alt="Favorite">
+            <img src="Icons/heart.svg" alt="Favorite">
         </div>
     </div>
 
     <div class="card-content">
 
         <p class="location">
-            <img src="Image/location.svg" alt="location">
+            <img src="Icons/location.svg" alt="location">
             Annapurna, Nepal
         </p>
 
@@ -385,11 +417,11 @@
         </h3>
 
         <div class="rating">
-              <img src="Image/Vectorstar.svg" alt="star">
-          <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
+              <img src="Icons/Vectorstar.svg" alt="star">
+          <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
 
     <span>4.8 (243)</span>
         </div>
@@ -399,7 +431,7 @@
         <div class="card-footer">
 
             <span class="days">
-                <img src="Image/clock3.svg" alt="clock">
+                <img src="Icons/clock3.svg" alt="clock">
                 12–14 days
             </span>
 
@@ -421,14 +453,14 @@
 
         
         <div class="heart">
-            <img src="Image/heart.svg" alt="Favorite">
+            <img src="Icons/heart.svg" alt="Favorite">
         </div>
     </div>
 
     <div class="card-content">
 
         <p class="location">
-            <img src="Image/location.svg" alt="location">
+            <img src="Icons/location.svg" alt="location">
             Gorkha, Nepal
         </p>
 
@@ -438,11 +470,11 @@
         </h3>
 
         <div class="rating">
-              <img src="Image/Vectorstar.svg" alt="star">
-          <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
+              <img src="Icons/Vectorstar.svg" alt="star">
+          <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
 
     <span>4.8 (243)</span>
         </div>
@@ -452,7 +484,7 @@
         <div class="card-footer">
 
             <span class="days">
-                <img src="Image/clock3.svg" alt="clock">
+                <img src="Icons/clock3.svg" alt="clock">
                 12–14 days
             </span>
 
@@ -475,14 +507,14 @@
 
         
         <div class="heart">
-            <img src="Image/heart.svg" alt="Favorite">
+            <img src="Icons/heart.svg" alt="Favorite">
         </div>
     </div>
 
     <div class="card-content">
 
         <p class="location">
-            <img src="Image/location.svg" alt="location">
+            <img src="Icons/location.svg" alt="location">
             Solukhumbu, Nepal
         </p>
 
@@ -492,11 +524,11 @@
         </h3>
 
         <div class="rating">
-              <img src="Image/Vectorstar.svg" alt="star">
-          <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
+              <img src="Icons/Vectorstar.svg" alt="star">
+          <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
 
     <span>4.8 (243)</span>
         </div>
@@ -506,7 +538,7 @@
         <div class="card-footer">
 
             <span class="days">
-                <img src="Image/clock3.svg" alt="clock">
+                <img src="Icons/clock3.svg" alt="clock">
                 12–14 days
             </span>
 
@@ -528,14 +560,14 @@
 
         
         <div class="heart">
-            <img src="Image/heart.svg" alt="Favorite">
+            <img src="Icons/heart.svg" alt="Favorite">
         </div>
     </div>
 
     <div class="card-content">
 
         <p class="location">
-            <img src="Image/location.svg" alt="location">
+            <img src="Icons/location.svg" alt="location">
             Langtang, Nepal
         </p>
 
@@ -545,11 +577,11 @@
         </h3>
 
         <div class="rating">
-              <img src="Image/Vectorstar.svg" alt="star">
-          <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
+              <img src="Icons/Vectorstar.svg" alt="star">
+          <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
 
     <span>4.8 (243)</span>
         </div>
@@ -559,7 +591,7 @@
         <div class="card-footer">
 
             <span class="days">
-                <img src="Image/clock3.svg" alt="clock">
+                <img src="Icons/clock3.svg" alt="clock">
                 12–14 days
             </span>
 
@@ -581,14 +613,14 @@
 
         
         <div class="heart">
-            <img src="Image/heart.svg" alt="Favorite">
+            <img src="Icons/heart.svg" alt="Favorite">
         </div>
     </div>
 
     <div class="card-content">
 
         <p class="location">
-            <img src="Image/location.svg" alt="location">
+            <img src="Icons/location.svg" alt="location">
             Annapurna, Nepal
         </p>
 
@@ -598,11 +630,11 @@
         </h3>
 
         <div class="rating">
-              <img src="Image/Vectorstar.svg" alt="star">
-          <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
+              <img src="Icons/Vectorstar.svg" alt="star">
+          <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
 
     <span>4.8 (243)</span>
         </div>
@@ -612,7 +644,7 @@
         <div class="card-footer">
 
             <span class="days">
-                <img src="Image/clock3.svg" alt="clock">
+                <img src="Icons/clock3.svg" alt="clock">
                 12–14 days
             </span>
 
@@ -634,14 +666,14 @@
 
         
         <div class="heart">
-            <img src="Image/heart.svg" alt="Favorite">
+            <img src="Icons/heart.svg" alt="Favorite">
         </div>
     </div>
 
     <div class="card-content">
 
         <p class="location">
-            <img src="Image/location.svg" alt="location">
+            <img src="Icons/location.svg" alt="location">
             Annapurna, Nepal
         </p>
 
@@ -651,11 +683,11 @@
         </h3>
 
         <div class="rating">
-              <img src="Image/Vectorstar.svg" alt="star">
-          <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
-    <img src="Image/Vectorstar.svg" alt="star">
+              <img src="Icons/Vectorstar.svg" alt="star">
+          <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
+    <img src="Icons/Vectorstar.svg" alt="star">
 
     <span>4.8 (243)</span>
         </div>
@@ -665,7 +697,7 @@
         <div class="card-footer">
 
             <span class="days">
-                <img src="Image/clock3.svg" alt="clock">
+                <img src="Icons/clock3.svg" alt="clock">
                 12–14 days
             </span>
 
@@ -704,58 +736,52 @@
 
             <a href="#" class="see-all">
           See all
-         <img src="Image/arrow icon.svg" alt="Arrow">
+         <img src="Icons/arrow icon.svg" alt="Arrow">
         </a>
         </div>
 
 
-        <div  class="destination-grid">
+        <div class="destination-grid">
 
-            <div class="destination-card">
-                <img src="Image/Annapurna.jpg" alt="ABC">
-                <div class="overlay">
-                    Annapurna Circuit Trek
-                </div>
-            </div>
-
-            <div class="destination-card wide">
-                <img src="Image/Rara.jpg" alt="Rara">
-                <div class="overlay">
-                    Rara Lake Exploration & Trek
-                </div>
-            </div>
-
-
-            <div class="destination-card tall">
-                <img src="Image/Lumbini.jpg" alt="Lumbini">
-                <div class="overlay">
-                    Lumbini - Spiritual & Cultural Retreat
-                </div>
-             </div>
-
-
-
-             <div class="destination-card">
-                <img src="Image/Langtang-Gosaikunda-Trek-575x490.jpg" alt="langtang">
-                <div class="overlay">
-                Langtang Gosaikunda Trek
-                </div>
-             </div>
-
-
-
-
-               <div class="destination-card wide">
-                <img src="Image/Nagarkot.jpg" alt="Nagarkot">
-                <div class="overlay">
-                    Nagarkot – Sunrise & Himalayan Views
-                </div>
-            </div>
-
-
-
-
+    <div class="destination-card">
+        <img src="Image/Annapurna.jpg" alt="ABC">
+        <div class="overlay">
+            Annapurna Circuit Trek
         </div>
+    </div>
+
+    <div class="destination-card">
+        <img src="Image/Langtang-Gosaikunda-Trek-575x490.jpg" alt="langtang">
+        <div class="overlay">
+            Langtang Gosaikunda Trek
+        </div>
+    </div>
+
+    <div class="destination-card wide">
+        <img src="Image/Rara.jpg" alt="Rara">
+        <div class="overlay">
+            Rara Lake Exploration & Trek
+        </div>
+    </div>
+
+    <div class="destination-card wide">
+        <img src="Image/Nagarkot.jpg" alt="Nagarkot">
+        <div class="overlay">
+            Nagarkot – Sunrise & Himalayan Views
+        </div>
+    </div>
+
+    <div class="destination-card wide">
+        <img src="Image/Lumbini.jpg" alt="Lumbini">
+        <div class="overlay">
+            Lumbini - Spiritual & Cultural Retreat
+        </div>
+    </div>
+
+</div>
+
+
+        
     </div>
 </section>
 
@@ -774,7 +800,7 @@
 
                 <div class="feature">
 
-                    <img src="Image/Uicon.svg" alt="Ticket">
+                    <img src="Icons/Uicon.svg" alt="Ticket">
 
                     <div>
                         <h4>Ultimate flexibility</h4>
@@ -785,7 +811,7 @@
 
                 <div class="feature">
 
-                    <img src="Image/Micon.svg" alt="Balloon">
+                    <img src="Icons/Micon.svg" alt="Balloon">
 
                     <div>
                         <h4>Memorable experiences</h4>
@@ -796,7 +822,7 @@
 
                 <div class="feature">
 
-                    <img src="Image/Qicon.svg" alt="Diamond">
+                    <img src="Icons/Qicon.svg" alt="Diamond">
 
                     <div>
                         <h4>Quality at our core</h4>
@@ -831,7 +857,7 @@
 
             <a href="#" class="see-all">
                 See all
-                <img src="Image/arrow icon.svg" alt="Arrow">
+                <img src="Icons/arrow icon.svg" alt="Arrow">
             </a>
 
         </div>
@@ -980,11 +1006,11 @@
         4.9
 
         <span class="stat-stars">
-            <img src="Image/Vectorstar.svg" alt="stat-stars">
-            <img src="Image/Vectorstar.svg" alt="stat-stars">
-            <img src="Image/Vectorstar.svg" alt="stat-stars">
-            <img src="Image/Vectorstar.svg" alt="stat-stars">
-            <img src="Image/Vectorhalfsalf.svg" alt="stat-stars">
+            <img src="Icons/Vectorstar.svg" alt="stat-stars">
+            <img src="Icons/Vectorstar.svg" alt="stat-stars">
+            <img src="Icons/Vectorstar.svg" alt="stat-stars">
+            <img src="Icons/Vectorstar.svg" alt="stat-stars">
+            <img src="Icons/Vectorhalfsalf.svg" alt="stat-stars">
         </span>
 
     </h3>
@@ -1020,7 +1046,7 @@
 
             <a href="#" class="see-all">
                 See all
-                <img src="Image/arrow icon.svg" alt="Arrow">
+                <img src="Icons/arrow icon.svg" alt="Arrow">
             </a>
 
         </div>
@@ -1109,7 +1135,7 @@
 
             <a href="#" class="see-all">
                 See all
-                <img src="Image/arrow icon.svg" alt="Arrow">
+                <img src="Icons/arrow icon.svg" alt="Arrow">
             </a>
 
         </div>
@@ -1192,12 +1218,12 @@
 
             <div class="brand-logos">
 
-                <img src="Image/airbnb.svg" alt="airbnb">
-                <img src="Image/trivago.svg" alt="trivago">
-                <img src="Image/bookingcom.svg" alt="booking.com">
-                <img src="Image/trip.svg" alt="trip">
-                <img src="Image/Tripadvisor.svg" alt="tripadvisor">
-                <img src="Image/Tripad.svg" alt="tripad">
+                <img src="Icons/airbnb.svg" alt="airbnb">
+                <img src="Icons/trivago.svg" alt="trivago">
+                <img src="Icons/bookingcom.svg" alt="booking.com">
+                <img src="Icons/trip.svg" alt="trip">
+                <img src="Icons/Tripadvisor.svg" alt="tripadvisor">
+                <img src="Icons/Tripad.svg" alt="tripad">
                 
 
             </div>
@@ -1220,7 +1246,7 @@
 
             <div class="contact-expert">
 
-                <img src="Image/headphoneicon.svg" alt="Headset">
+                <img src="Icons/headphoneicon.svg" alt="Headset">
 
                 <p>
                     Speak to our expert at
@@ -1233,10 +1259,10 @@
 
                 <span>Follow Us</span>
 
-                <a href="#"><img src="Image/facebook.svg" alt="facebook"></a>
-                <a href="#"><img src="Image/twitter.svg" alt="twitter"></a>
-                <a href="#"><img src="Image/instagram.svg" alt="instagram"></a>
-                <a href="#"><img src="Image/linkedin.svg" alt="linkedin"></a>
+                <a href="#"><img src="Icons/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="Icons/twitter.svg" alt="twitter"></a>
+                <a href="#"><img src="Icons/instagram.svg" alt="instagram"></a>
+                <a href="#"><img src="Icons/linkedin.svg" alt="linkedin"></a>
 
             </div>
 
@@ -1312,7 +1338,7 @@
                         placeholder="Your email address">
 
                     <button>
-                        <img src="Image/send.svg" alt="send">
+                        <img src="Icons/send.svg" alt="send">
                     </button>
 
                 </div>
@@ -1331,26 +1357,41 @@
 
 </footer>
 
-<!-- menu -->
 
-<!-- <div class="sidebar" id="sidebar">
 
-    <button class="close-btn" id="closeMenu">
-        &times;
-    </button>
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const sideMenu = document.getElementById('sideMenu');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const closeMenu = document.getElementById('closeMenu');
 
-    <h2>Main Menu</h2>
+  function openMenu() {
+    sideMenu.classList.add('active');
+    menuOverlay.classList.add('active');
+  }
 
-    <ul>
-        <li><a href="index.html">Home <span>&rsaquo;</span></a></li>
-        <li><a href="#">Destination <span>&rsaquo;</span></a></li>
-        <li><a href="#">About <span>&rsaquo;</span></a></li>
-        <li><a href="#">Blog <span>&rsaquo;</span></a></li>
-        <li><a href="#">Faq <span>&rsaquo;</span></a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+  function closeMenuPanel() {
+    sideMenu.classList.remove('active');
+    menuOverlay.classList.remove('active');
+  }
 
-</div> -->
+  menuToggle.addEventListener('click', openMenu);
+  closeMenu.addEventListener('click', closeMenuPanel);
+  menuOverlay.addEventListener('click', closeMenuPanel);
+
+  const mobileSearchToggle = document.getElementById('mobileSearchToggle');
+  const mobileSearchBar = document.getElementById('mobileSearchBar');
+
+  mobileSearchToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    mobileSearchBar.classList.toggle('active');
+    if (mobileSearchBar.classList.contains('active')) {
+      mobileSearchBar.querySelector('input').focus();
+    }
+  });
+</script>
+
+
 
 </body>
 
