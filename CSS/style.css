@@ -50,8 +50,10 @@ body{
   gap: 40px;
   padding: 22px 32px;
   color: #fff;
+  position: relative; 
 }
- 
+
+
 /* logo */
 .logo {
   font-size: 22px;
@@ -64,6 +66,9 @@ body{
  
 /* search bar (desktop) */
 .nav-search {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -72,7 +77,6 @@ body{
   padding: 10px 20px;
   width: 340px;
   max-width: 30vw;
-  order: 2;
 }
  
 .nav-search .search-icon {
@@ -1280,9 +1284,47 @@ body{
     padding:20px;
 }
 
-.box{
-    width:100%;
+
+.box-icon {
+  display: flex; /* icon visible again */
 }
+
+.box {
+  width: 100%;
+  flex-direction: row;      
+  align-items: center;
+  text-align: left;
+  justify-content: flex-start;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.box h4,
+.box p {
+  text-align: left;
+}
+
+.search-card {
+  flex-direction: column;
+  gap: 0;               
+  padding: 20px;
+}
+
+.box:last-of-type {
+  border-bottom: none;
+}
+
+.search-card button {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 50px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+
 
 .search-card button{
     width:100%;
