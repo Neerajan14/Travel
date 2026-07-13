@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel</title>
+    <title>Seven Peak Expedition</title>
 
     
     <link rel="stylesheet"
@@ -33,8 +33,12 @@
   <img src="Icons/hamburger menu.svg" alt="Menu" class="hamburger-img">
 </button>
  
-  <a href="#" class="logo">Travel</a>
- 
+ <a href="index.html" class="logo">
+  <img src="Image/Seven-Peak-Logo-transparent.png" alt="Seven-peak Logo">
+</a>
+
+
+
   <div class="nav-search">
     <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
       <circle cx="11" cy="11" r="7"></circle>
@@ -139,25 +143,13 @@
             </div>
         </div>
 
-       <button class="search-btn">
+
+        <button class="search-btn">
        <img src="Icons/search.svg" alt="Search" class="searchbox-icon">
         <span>Search</span>
         </button>
 
-    </div>
-
-    <!-- Navigation Arrows -->
-    <div class="hero-arrows">
-
-        <button class="hero-arrow left-arrow" aria-label="Previous">
-            <img src="Icons/leftButton.svg" alt="Previous">
-        </button>
-
-        <button class="hero-arrow right-arrow" aria-label="Next">
-            <img src="Icons/rightButton.svg" alt="Next">
-        </button>
-
-    </div>
+ 
 
 </div>
 
@@ -169,18 +161,24 @@
     <div class="container">
 
         <div class="featured-header">
-            <h2>Featured Trips</h2>
+
+            <a href="destinations.html" class="section-title-link">
+               <h2>Featured Trips</h2>
+            </a>
 
             <div class="categories">
-                <button class="active">Adventure</button>
-                <button > Nature</button>
-                <button>Food</button>
-            </div>
+    <button type="button" class="active" data-filter="adventure">Adventure</button>
+    <button type="button" data-filter="nature">Nature</button>
+    <button type="button" data-filter="food">Food</button>
+   </div>
+
+
 
         </div>
 
         <div class="trips-cards">
-         <div class="card">
+
+         <div class="card"  data-category="adventure"  data-href="details.html">
 
     <div class="card-image">
         <img src="Image/everest.jpg" alt="Everest">
@@ -229,12 +227,12 @@
     </div>
 
 </div>
-   
+
 
 
  <!-- Card no 2 -->
 
-        <div class="card">
+        <div class="card"   data-category="adventure" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/Annapurna.jpg" alt="Annupurna">
@@ -288,7 +286,7 @@
 <!-- Card no 3 -->
 
 
-        <div class="card">
+        <div class="card" data-category="food" data-href="details.html" >
 
     <div class="card-image">
         <img src="Image/Walk To Tranquillity_ 5 Must-Visit Spiritual_.jpeg" alt="Everest">
@@ -341,7 +339,7 @@
 
 <!-- Card no 4 -->
 
-        <div class="card">
+        <div class="card" data-category="adventure" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/Langtang-Valley-Trek.webp" alt="Langtang-Valley-Trek">
@@ -393,7 +391,7 @@
 
 
   <!-- Card no 5 -->
-         <div class="card">
+         <div class="card" data-category="food" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/annapurna_circuit_01_3aa5646dc7.webp" alt="annapurna_circuit">
@@ -446,7 +444,7 @@
 
           <!-- Card no 6 -->
 
-          <div class="card">
+          <div class="card" data-category="nature" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/Manaslu Circuit Trek .avif" alt="Manaslu Circuit Trek">
@@ -500,7 +498,7 @@
 
           <!-- Card no 7 -->
 
-          <div class="card">
+          <div class="card" data-category="food" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/Peaky Peak Trek.jpeg" alt="Everest">
@@ -553,7 +551,7 @@
 
           <!-- Card no 8 -->
 
-          <div class="card">
+          <div class="card" data-category="nature" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/Langtang-Gosaikunda-Trek-575x490.jpg" alt="Lantang">
@@ -567,7 +565,7 @@
     <div class="card-content">
 
         <p class="location">
-            <img src="Icons/location.svg" alt="location">
+            <img src="Icons/location.svg" alt="location" data-href="details.html">
             Langtang, Nepal
         </p>
 
@@ -604,112 +602,7 @@
           </div>
 
 
-          <!-- Card no 9 -->
-
-          <div class="card">
-
-    <div class="card-image">
-        <img src="Image/everest.jpg" alt="Everest">
-
         
-        <div class="heart">
-            <img src="Icons/heart.svg" alt="Favorite">
-        </div>
-    </div>
-
-    <div class="card-content">
-
-        <p class="location">
-            <img src="Icons/location.svg" alt="location">
-            Annapurna, Nepal
-        </p>
-
-        <h3>
-            Annapurna circuit trek–
-            Classic Adventure
-        </h3>
-
-        <div class="rating">
-              <img src="Icons/Vectorstar.svg" alt="star">
-          <img src="Icons/Vectorstar.svg" alt="star">
-    <img src="Icons/Vectorstar.svg" alt="star">
-    <img src="Icons/Vectorstar.svg" alt="star">
-    <img src="Icons/Vectorstar.svg" alt="star">
-
-    <span>4.8 (243)</span>
-        </div>
-
-        <hr class="divider">
-
-        <div class="card-footer">
-
-            <span class="days">
-                <img src="Icons/clock3.svg" alt="clock">
-                12–14 days
-            </span>
-
-            <span>From <strong>$189.25</strong></span>
-
-          </div>
-
-            </div>
-
-          </div>
-
-
-          <!-- Card no 10 -->
-
-          <div class="card">
-
-    <div class="card-image">
-        <img src="Image/everest.jpg" alt="Everest">
-
-        
-        <div class="heart">
-            <img src="Icons/heart.svg" alt="Favorite">
-        </div>
-    </div>
-
-    <div class="card-content">
-
-        <p class="location">
-            <img src="Icons/location.svg" alt="location">
-            Annapurna, Nepal
-        </p>
-
-        <h3>
-            Annapurna circuit trek–
-            Classic Adventure
-        </h3>
-
-        <div class="rating">
-              <img src="Icons/Vectorstar.svg" alt="star">
-          <img src="Icons/Vectorstar.svg" alt="star">
-    <img src="Icons/Vectorstar.svg" alt="star">
-    <img src="Icons/Vectorstar.svg" alt="star">
-    <img src="Icons/Vectorstar.svg" alt="star">
-
-    <span>4.8 (243)</span>
-        </div>
-
-        <hr class="divider">
-
-        <div class="card-footer">
-
-            <span class="days">
-                <img src="Icons/clock3.svg" alt="clock">
-                12–14 days
-            </span>
-
-            <span>From <strong>$189.25</strong></span>
-
-          </div>
-
-            </div>
-
-          </div>
-
-
 
 
         </div>
@@ -786,67 +679,6 @@
 </section>
 
 
-
-<section class="why-us">
-
-    <div class="container">
-
-        <div class="why-wrapper">
-
-            
-            <div class="why-content">
-
-                <h2>Why choose Us</h2>
-
-                <div class="feature">
-
-                    <img src="Icons/Uicon.svg" alt="Ticket">
-
-                    <div>
-                        <h4>Ultimate flexibility</h4>
-                        <p>You're in control, with free cancellation and payment.</p>
-                    </div>
-
-                </div>
-
-                <div class="feature">
-
-                    <img src="Icons/Micon.svg" alt="Balloon">
-
-                    <div>
-                        <h4>Memorable experiences</h4>
-                        <p>Browse and book tours and activities so incredible.</p>
-                    </div>
-
-                </div>
-
-                <div class="feature">
-
-                    <img src="Icons/Qicon.svg" alt="Diamond">
-
-                    <div>
-                        <h4>Quality at our core</h4>
-                        <p>High quality standards. Millions of reviews.</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-            
-            <div class="why-image">
-                <img src="Image/Whyus.jpg" alt="Why Choose Us">
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
 <section class="top-attractions">
 
     <div class="container">
@@ -921,10 +753,9 @@
                 <h4>Amazing Experience</h4>
 
                 <p>
-                    The Everest Base Camp trek to the local village stays,
-                    everything was perfectly organized. The guides were
-                    professional, friendly, and truly cared about our safety
-                    and experience.
+                    Highly recommend. I took a 28 day trip in 2026.
+                    I had an amazing time, and angdawar was incredibly friendly, attentive and knowledgeable.
+                    If I return to Nepal I will certainly be doing so with angdawa 
                 </p>
 
                 <hr>
@@ -934,7 +765,7 @@
                     <img src="Image/Suman.jpg" alt="suman">
 
                     <div>
-                        <h5>Suman Adhikari, <span>Pokhara</span></h5>
+                        <h5>Daniel Quinton </h5>
                         <span>Trekker</span>
                     </div>
 
@@ -948,9 +779,7 @@
                 <h4>Trip of a Lifetime</h4>
 
                 <p>
-                    Nepal exceeded all my expectations. Stunning landscapes,
-                    warm hospitality, and seamless planning from start to finish.
-                    Pokhara and Chitwan were absolute highlights.
+                    Fantastic experience. Trip of a lifetime with great guides.
                 </p>
 
                 <hr>
@@ -960,7 +789,7 @@
                     <img src="Image/Anusha.jpg" alt="anusha">
 
                     <div>
-                        <h5>Anusha Sharma, <span>Kathmandu</span></h5>
+                        <h5>Kevin Watts</h5>
                         <span>Adventure Traveler</span>
                     </div>
 
@@ -974,9 +803,8 @@
                 <h4>Highly Recommended</h4>
 
                 <p>
-                    An unforgettable journey through the Himalayas.
-                    The team handled permits, accommodation,
-                    and logistics flawlessly.
+                    I had an amazing time on the ACT. Ang Dawa Sherpa was awesome and made everything run smoothly so that we could enjoy the trek to
+                
                 </p>
 
                 <hr>
@@ -986,7 +814,7 @@
                     <img src="Image/Nabin.jpg" alt="nabin">
 
                     <div>
-                        <h5>Nabin Gurung, <span>Dharan</span></h5>
+                        <h5>Thomas Maycock</h5>
                         <span>Mountain Explorer</span>
                     </div>
 
@@ -1003,14 +831,14 @@
             <div class="stat">
 
     <h3>
-        4.9
+        5
 
         <span class="stat-stars">
             <img src="Icons/Vectorstar.svg" alt="stat-stars">
             <img src="Icons/Vectorstar.svg" alt="stat-stars">
             <img src="Icons/Vectorstar.svg" alt="stat-stars">
             <img src="Icons/Vectorstar.svg" alt="stat-stars">
-            <img src="Icons/Vectorhalfsalf.svg" alt="stat-stars">
+            <img src="Icons/Vectorstar.svg" alt="stat-stars">
         </span>
 
     </h3>
@@ -1044,7 +872,7 @@
 
             <h2>Top Activities</h2>
 
-            <a href="#" class="see-all">
+            <a href="destinations.html" class="see-all">
                 See all
                 <img src="Icons/arrow icon.svg" alt="Arrow">
             </a>
@@ -1117,6 +945,24 @@
                     <p>1 Day</p>
                 </div>
             </div>
+
+             <div class="activity-card">
+                <img src="Image/zipline.png" alt="zip-cycle">
+                <div class="overlay">
+                    <h4>Zip Cycle</h4>
+                    <p>1 Day</p>
+                </div>
+            </div>
+
+             <div class="activity-card">
+                <img src="Image/Swinging.jpeg" alt="Swing">
+                <div class="overlay">
+                    <h4>Swinging</h4>
+                    <p>1 Day</p>
+                </div>
+            </div>
+
+
 
         </div>
 
@@ -1210,25 +1056,100 @@
 
         </div>
 
-        <!-- Brand Logos -->
 
-        <div class="brands">
+        <section class="team">
 
-            <p>Trusted by all the largest travel brands</p>
+    <div class="container">
 
-            <div class="brand-logos">
+        <div class="team-header">
+            <h2>Our Members</h2>
+        </div>
 
-                <img src="Icons/airbnb.svg" alt="airbnb">
-                <img src="Icons/trivago.svg" alt="trivago">
-                <img src="Icons/bookingcom.svg" alt="booking.com">
-                <img src="Icons/trip.svg" alt="trip">
-                <img src="Icons/Tripadvisor.svg" alt="tripadvisor">
-                <img src="Icons/Tripad.svg" alt="tripad">
-                
+        <div class="team-grid">
 
+            <div class="team-card">
+                <img src="Image/Ang Dawa Sherpa.webp" alt="Ang Dawa Sherpa">
+                <h4>Ang Dawa Sherpa</h4>
+                <p>Managing Director</p>
+            </div>
+
+            <div class="team-card">
+                <img src="Image/Anita Gurung.webp" alt="Anita Gurung">
+                <h4>Anita Gurung</h4>
+                <p>Executive Director</p>
+            </div>
+
+            <div class="team-card">
+                <img src="Image/Sharun Shrestha Maharjan.webp" alt="Sharun Shrestha Maharjan">
+                <h4>Sharun Shrestha Maharjan</h4>
+                <p>Office Chairman</p>
+            </div>
+
+            <div class="team-card">
+                <img src="Image/Shanta Kumar Maharjan.webp" alt="Shanta Kumar Maharjan">
+                <h4>Shanta Kumar Maharjan</h4>
+                <p>Transfer Incharge</p>
+            </div>
+
+            <div class="team-card">
+                <img src="Image/Mingmar Tukte Sherpa.webp" alt="Mingmar Tukte Sherpa">
+                <h4>Mingmar Tukte Sherpa</h4>
+                <p>Team Leader</p>
+            </div>
+
+            <div class="team-card">
+                <img src="Image/Mingmar Kami Sherpa.webp" alt="Mingmar Kami Sherpa">
+                <h4>Mingmar Kami Sherpa</h4>
+                <p>Company Supporter</p>
+            </div>
+
+            <div class="team-card">
+                <img src="Image/Suman Thapa.webp" alt="Suman Thapa">
+                <h4>Suman Thapa</h4>
+                <p>Team Advisor</p>
             </div>
 
         </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+      <!-- Brand Logos -->
+
+<div class="brands">
+
+    <p>Trusted by all the largest travel brands</p>
+
+    <div class="brand-logos">
+
+        <a href="https://www.tripadvisor.com" target="_blank" rel="noopener">
+            <img src="Image/tripadvisor.webp" alt="TripAdvisor">
+        </a>
+
+        <a href="https://www.nepalmountaineering.org/" target="_blank" rel="noopener">
+            <img src="Image/nepalmountaineering.webp" alt="Nepal Mountaineering Association">
+        </a>
+
+        <a href="https://ntb.gov.np/" target="_blank" rel="noopener">
+            <img src="Image/nepal tourism board.webp" alt="Nepal Tourism">
+        </a>
+
+        <a href="https://ntb.gov.np/" target="_blank" rel="noopener">
+            <img src="Image/ntb.webp" alt="Nepal Tourism Board">
+        </a>
+
+        <a href="https://www.taan.org.np/" target="_blank" rel="noopener">
+            <img src="Image/taan.webp" alt="Trekking Agencies Association of Nepal">
+        </a>
+
+    </div>
+
+</div>
 
     </div>
 
@@ -1250,7 +1171,7 @@
 
                 <p>
                     Speak to our expert at
-                    <a href="tel:+9779819819891">+977 98198 19891</a>
+                    <a href="tel: 977 9843396644">+977 9843396644</a>
                 </p>
 
             </div>
@@ -1274,38 +1195,27 @@
 
         <div class="footer-content">
 
-            <!-- Contact -->
+    <!-- Contact -->
 
-            <div class="footer-column">
+<div class="footer-column">
 
-                <h3>Contact</h3>
+    <a href="index.html" class="footer-logo">
+        <img src="Image/Seven-Peak-Logo-transparent.png" alt="Seven-peak Logo">
+    </a>
 
-                <p>
-                    123 xyz Street,
-                    Kathmandu Koteshwor 45600,
-                    Nepal
-                </p>
+    <h3>Contact</h3>
 
-                <p>info@domain.com</p>
+    <p>
+        123 xyz Street,
+        Kathmandu Koteshwor 45600,
+        Nepal
+    </p>
 
-            </div>
+    <p>info@domain.com</p>
 
-            <!-- Company -->
+</div>
 
-            <div class="footer-column">
-
-                <h3>Company</h3>
-
-                <a href="#">About Us</a>
-                <a href="#">Tour Reviews</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Travel Guides</a>
-                <a href="#">Data Policy</a>
-                <a href="#">Cookie Policy</a>
-                <a href="#">Legal</a>
-                <a href="#">Sitemap</a>
-
-            </div>
+    
 
             <!-- Support -->
 
@@ -1320,18 +1230,15 @@
 
             </div>
 
-            <!-- Newsletter -->
+            <!-- emails -->
 
             <div class="footer-column">
 
-                <h3>Newsletter</h3>
+                <h3>Email</h3>
 
-                <p>
-                    Subscribe to the free newsletter and
-                    stay up to date
-                </p>
+             
 
-                <div class="newsletter">
+                <div class="letters">
 
                     <input
                         type="email"
@@ -1341,25 +1248,25 @@
                         <img src="Icons/send.svg" alt="send">
                     </button>
 
-                </div>
+                
 
-            </div>
+            
 
         </div>
 
      
 
         <div class="copyright">
-            © Copyright Travel & Tours Service 2025
+            © Seven Peak Expedition Pvt Ltd 2026
         </div>
 
     </div>
 
 </footer>
 
-
-
 <script>
+
+  // ===== Slide-in menu =====
   const menuToggle = document.getElementById('menuToggle');
   const sideMenu = document.getElementById('sideMenu');
   const menuOverlay = document.getElementById('menuOverlay');
@@ -1375,21 +1282,80 @@
     menuOverlay.classList.remove('active');
   }
 
-  menuToggle.addEventListener('click', openMenu);
-  closeMenu.addEventListener('click', closeMenuPanel);
-  menuOverlay.addEventListener('click', closeMenuPanel);
+  if (menuToggle) menuToggle.addEventListener('click', openMenu);
+  if (closeMenu) closeMenu.addEventListener('click', closeMenuPanel);
+  if (menuOverlay) menuOverlay.addEventListener('click', closeMenuPanel);
 
+
+  // ===== Mobile search toggle =====
   const mobileSearchToggle = document.getElementById('mobileSearchToggle');
   const mobileSearchBar = document.getElementById('mobileSearchBar');
 
-  mobileSearchToggle.addEventListener('click', function(e) {
-    e.preventDefault();
-    mobileSearchBar.classList.toggle('active');
-    if (mobileSearchBar.classList.contains('active')) {
-      mobileSearchBar.querySelector('input').focus();
-    }
+  if (mobileSearchToggle && mobileSearchBar) {
+    mobileSearchToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      mobileSearchBar.classList.toggle('active');
+      if (mobileSearchBar.classList.contains('active')) {
+        mobileSearchBar.querySelector('input').focus();
+      }
+    });
+  }
+
+
+  // ===== Desktop search box toggle =====
+  const searchBtn = document.getElementById("searchBtn");
+  const searchInput = document.getElementById("searchInput");
+
+  if (searchBtn && searchInput) {
+    searchBtn.addEventListener("click", function () {
+      searchInput.classList.toggle("active");
+      if (searchInput.classList.contains("active")) {
+        searchInput.focus();
+      }
+    });
+  }
+
+
+  // ===== Featured trips category filter =====
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".categories button");
+    const cards = document.querySelectorAll(".card");
+
+    filterButtons.forEach(button => {
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        filterButtons.forEach(btn => btn.classList.remove("active"));
+        this.classList.add("active");
+
+        const filter = this.dataset.filter;
+
+        cards.forEach(card => {
+          card.style.display = card.dataset.category === filter ? "block" : "none";
+        });
+      });
+    });
   });
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        card.addEventListener("click", function (e) {
+          
+            if (e.target.closest(".heart")) {
+                return;
+            }
+            window.location.href = this.dataset.href;
+        });
+    });
+});
+
 </script>
+
+
 
 
 

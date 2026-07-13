@@ -5,9 +5,6 @@
     font-family:'DM Sans',sans-serif;
 }
 
-body{
-    background:#f5f8ff;
-}
 
 .navbar{
     width:100%;
@@ -15,15 +12,21 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    background: #0c2237;
     padding:0 70px;
     border-bottom:1px solid #eee;
 }
 
 .logo{
-    font-size:32px;
-    font-weight:700;
-    color:#2563EB;
-    cursor:pointer;
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
+.logo img{
+    height: 50px;
+    width: auto;
+    display: block;
 }
 
 .search-box{
@@ -71,4 +74,46 @@ body{
     color:#2d67ff;
     font-size:24px;
     cursor:pointer;
+}
+
+
+@media (max-width: 500px) {
+
+  .navbar {
+    padding: 0 16px;
+    height: 60px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .search-box {
+    width: auto;
+    flex: 1;
+    margin: 0 12px;
+    padding: 8px 14px;
+  }
+
+  .search-box input {
+    font-size: 13px;
+  }
+
+  .search-box i {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    display: none; 
+  }
+
+  .menu {
+    font-size: 22px;
+  }
+
 }

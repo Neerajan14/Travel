@@ -148,12 +148,22 @@
 </div>
 
                 <!-- Sort -->
-                <select class="sort-btn">
-                    <option>Sort by: Popular</option>
-                    <option>Newest</option>
-                    <option>Price Low to High</option>
-                    <option>Price High to Low</option>
-                </select>
+                 <div class="custom-sort" id="customSort">
+                    <button class="sort-toggle" id="sortToggle">
+                        Sort by: <span id="sortLabel">Popular</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+
+                    <div class="sort-menu" id="sortMenu">
+                        <div class="sort-option active" data-value="Popular">Sort by: Popular</div>
+                        <div class="sort-option" data-value="Price Low to High">Price: Low to high</div>
+                        <div class="sort-option" data-value="Price High to Low">Price: High to Low</div>
+                        <div class="sort-option" data-value="Rating">Rating</div>
+                        <div class="sort-option" data-value="Duration">Duration</div>
+                    </div>
+                </div>
+               
 
             </div>
 
@@ -798,6 +808,31 @@ filterBtn.addEventListener("click", () => {
     filterPanel.classList.toggle("show");
 });
 });
+
+
+    const sortToggle = document.getElementById('sortToggle');
+    const sortMenu = document.getElementById('sortMenu');
+    const sortLabel = document.getElementById('sortLabel');
+    const sortOptions = document.querySelectorAll('.sort-option');
+
+    sortToggle.addEventListener('click', () => {
+        sortMenu.classList.toggle('show');
+    });
+
+    sortOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            sortOptions.forEach(o => o.classList.remove('active'));
+            option.classList.add('active');
+            sortLabel.textContent = option.dataset.value;
+            sortMenu.classList.remove('show');
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!document.getElementById('customSort').contains(e.target)) {
+            sortMenu.classList.remove('show');
+        }
+    });
 
 </script>
 
