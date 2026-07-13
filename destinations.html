@@ -178,7 +178,7 @@
     <div class="container">
 
          <div class="trips-cards">
-         <div class="card">
+         <div class="card" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/everest.jpg" alt="Everest">
@@ -232,7 +232,7 @@
 
  <!-- Card no 2 -->
 
-        <div class="card">
+        <div class="card" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/Annapurna.jpg" alt="Annupurna">
@@ -256,7 +256,7 @@
         </h3>
 
          <div class="rating">
-              <img src="Icons/Vectorstar.svg" alt="">
+              <img src="Icons/Vectorstar.svg" alt="star">
           <img src="Icons/Vectorstar.svg" alt="star">
     <img src="Icons/Vectorstar.svg" alt="star">
     <img src="Icons/Vectorstar.svg" alt="star">
@@ -286,7 +286,7 @@
 <!-- Card no 3 -->
 
 
-        <div class="card">
+        <div class="card" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/Walk To Tranquillity_ 5 Must-Visit Spiritual_.jpeg" alt="Everest">
@@ -339,7 +339,7 @@
 
 <!-- Card no 4 -->
 
-        <div class="card">
+        <div class="card" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/Langtang-Valley-Trek.webp" alt="Langtang-Valley-Trek">
@@ -391,7 +391,7 @@
 
 
   <!-- Card no 5 -->
-         <div class="card">
+         <div class="card" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/annapurna_circuit_01_3aa5646dc7.webp" alt="annapurna_circuit">
@@ -444,7 +444,7 @@
 
           <!-- Card no 6 -->
 
-          <div class="card">
+          <div class="card" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/Manaslu Circuit Trek .avif" alt="Manaslu Circuit Trek">
@@ -498,7 +498,7 @@
 
           <!-- Card no 7 -->
 
-          <div class="card">
+          <div class="card" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/Peaky Peak Trek.jpeg" alt="Everest">
@@ -551,7 +551,7 @@
 
           <!-- Card no 8 -->
 
-          <div class="card">
+          <div class="card" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/Langtang-Gosaikunda-Trek-575x490.jpg" alt="Lantang">
@@ -604,7 +604,7 @@
 
           <!-- Card no 9 -->
 
-          <div class="card">
+          <div class="card" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/everest.jpg" alt="Everest">
@@ -657,7 +657,7 @@
 
           <!-- Card no 10 -->
 
-          <div class="card">
+          <div class="card" data-href="details.html">
 
     <div class="card-image">
         <img src="Image/everest.jpg" alt="Everest">
@@ -833,6 +833,21 @@ filterBtn.addEventListener("click", () => {
             sortMenu.classList.remove('show');
         }
     });
+
+
+      document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        card.addEventListener("click", function (e) {
+          
+            if (e.target.closest(".heart")) {
+                return;
+            }
+            window.location.href = this.dataset.href;
+        });
+    });
+});
 
 </script>
 

@@ -62,7 +62,7 @@ body{
 }
 
 .logo img{
-    height: 80px;
+    height: 50px;
     width: auto;
     display: block;
 }
@@ -1220,6 +1220,13 @@ body{
     margin-bottom:35px;
 }
 
+.contact-expert a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
@@ -1874,10 +1881,27 @@ img{
         margin:25px 0 35px;
     }
 
-    .footer-content{
-        grid-template-columns:repeat(2,1fr);
-        gap:30px 20px;
+      .footer-content{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
     }
+
+    .footer-column h3{
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+
+    .footer-column p{
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .footer-column a{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
 
     .footer-column:nth-child(1),
     .footer-column:nth-child(4){
