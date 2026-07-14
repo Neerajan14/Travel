@@ -207,33 +207,68 @@
 
     .navbar{
         height:60px;
-        padding:0 20px;
+        padding:0 16px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:12px;
     }
 
     .logo img{
         height:40px;
     }
 
+    /* Show search bar on mobile */
     .search-box{
-        display:none;
+        display:flex;
+        flex:1;
+        max-width:180px;
+        height:40px;
+        background:#fff;
+        border:2px solid #2563EB;
+        border-radius:25px;
+        padding:0 12px;
+        align-items:center;
+    }
+
+    .search-box i{
+        color:#2563EB;
+        font-size:14px;
+        margin-right:8px;
+    }
+
+    .search-box input{
+        font-size:13px;
+        color:#16214A;
+    }
+
+    .search-box input::placeholder{
+        color:#2563EB;
+        font-size:12px;
     }
 
     .nav-links{
-        gap:15px;
+        gap:10px;
     }
 
     .nav-links a{
         display:none;
     }
 
+    .menu-btn{
+        background:none;
+        border:none;
+        padding:0;
+    }
+
     .menu-btn img{
         width:24px;
         height:24px;
+        display:block;
     }
 
     .side-menu{
         width:85%;
         max-width:320px;
     }
-
 }
