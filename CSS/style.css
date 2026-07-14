@@ -443,8 +443,8 @@ body{
 }
 
 .featured-header h2{
-    font-size: 36px;
-    color: #1d2951;
+    font-size: 30px;
+    color: #05073C;
 }
 
 .section-title-link {
@@ -471,9 +471,9 @@ body{
 .categories button{
     border:none;
     background:transparent;
-    color:#1d1d1d;
+    color:#05073C;
     font-size:18px;
-    font-weight:600;
+    font-weight:400;
     padding:16px 28px;
     border-radius:14px;
     cursor:pointer;
@@ -552,6 +552,12 @@ body{
 .card-content h3{
     padding: 3px;
     font-weight: 500;
+    font-size: 16px;
+    color: #05073C;
+    line-height: 24px;
+   width: 249.4px;
+   height: 45px;
+   top: 254.6px;
 }
 
 
@@ -574,7 +580,15 @@ body{
 }
 
 
-.location,
+.location{
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ font-weight: 400;
+ font-size: 12px;
+}
+
+
 .days{
  display: flex;
  align-items: center;
@@ -624,8 +638,9 @@ body{
 }
 
 .trending-header h2{
-    font-size:32px;
-    color:#1d2951;
+    font-size:29.88px;
+    line-height: 45px;
+    color:#05073C;
 }
 
 .trending-header a{
@@ -749,7 +764,7 @@ body{
 
 .feature h4{
 
-    color:#1d2951;
+    color:#05073C;
 
     margin-bottom:8px;
 
@@ -779,8 +794,8 @@ body{
 }
 
 .section-header h2{
-    font-size:32px;
-    color:#1d2951;
+    font-size:29.88px;
+    color:#000000;
 }
 
 .see-all{
@@ -826,7 +841,7 @@ body{
 .attraction-card h4{
     margin-top:12px;
     font-size:17px;
-    color:#1d2951;
+    color:#05073C;
 }
 
 .attraction-card p{
@@ -893,7 +908,7 @@ body{
 
     line-height:1.8;
 
-    color:#555;
+    color:#05073C;
 
     margin-bottom:20px;
 }
@@ -1001,8 +1016,8 @@ body{
 }
 
 .activities-header h2{
-    font-size:32px;
-    color:#1d2951;
+    font-size:29.88px;
+    color:#05073C;
 }
 
 .activities-grid{
@@ -1073,8 +1088,8 @@ body{
 }
 
 .articles-header h2{
-    font-size:32px;
-    color:#1d2951;
+    font-size:29.88px;
+    color:#05073C;
 }
 
 .articles-grid{ 
@@ -1112,7 +1127,7 @@ body{
     left:15px;
 
     background:#fff;
-    color:#1d2951;
+    color:#05073C;
 
     padding:6px 14px;
 
@@ -1133,12 +1148,12 @@ body{
 .article-info .divider{
     width: 1px;
     height: 16px;
-    background: #d9d9d9;
+    background: #05073C;
 }
 
 .article-card h3{
     font-size:22px;
-    color:#1d2951;
+    color:#05073C;
     line-height:1.5;
     padding-left: 20px;
     padding-right: 2px;
