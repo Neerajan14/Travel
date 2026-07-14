@@ -15,7 +15,9 @@
 
     <div class="container">
         <diV class="login-box">
-            <h1 class="logo">Travel</h1>
+            <div class="logo">
+           <img src="Image/Seven-Peak-Logo-Menu-Bar.png" alt="Travel Logo">
+              </div>
 
             <h2>Welcome back</h2>
 
@@ -24,63 +26,60 @@
                 and enjoy a smooth, personalized booking experience.
             </p>
 
-            <form>
-                <label>E-mail</label>
-                <input type="email" placeholder="Please type ypur e-mail">
 
-             <div class="password-title">
-                <label>Password</label>
-            </div>
-            <input type="password" placeholder="Please type your password">
-            
-            <div class="forgot-row">
-                <a href="#">Forgot password?</a>
-            </div>
-             
+            <form id="loginForm">
+    <label>E-mail</label>
+    <input id="email" type="email" placeholder="Please type your e-mail" required>
 
-             
-             
-                  
+    <div class="password-title">
+        <label>Password</label>
+    </div>
 
+    <input id="password" type="password" placeholder="Please type your password" required>
 
-                <button type="submit">Login</button>
+    <div class="forgot-row">
+        <a href="#">Forgot password?</a>
+    </div>
 
-                <div class="divider">
-                    <span></span>
-                    <p>or</p>
-                    <span></span>
-                </div>
+    <button type="submit">Login</button>
 
-                
+    <div class="divider">
+        <span></span>
+        <p>or</p>
+        <span></span>
+    </div>
 
-                <button class="google-btn">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="">
-                    Sign In with Google
-                </button>
+    <button type="button" class="google-btn" id="googleLogin">
+        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="">
+        Sign In with Google
+    </button>
+</form>
 
-                <p class="signup">
-                    Don't have an account yet?
-                    <a href="">Sign Up</a>
-                </p>
-                
-            </form>
+     
             
         </diV>
     </div>
 
 
 
-   <script>
-    const provider = new GoogleAuthProvider();
+ <script>
+document.getElementById("loginForm").addEventListener("submit", function(e){
+    e.preventDefault();
 
-signInWithPopup(auth, provider)
-  .then((result) => {
-      window.location.href = "index.html";
-  })
-  .catch((error) => {
-      console.log(error);
-  });
-   </script>
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+
+    if(email && password){
+        window.location.href = "index.html";
+    }else{
+        alert("Please fill all fields.");
+    }
+});
+
+document.getElementById("googleLogin").addEventListener("click", function(){
+    window.location.href = "index.html";
+});
+</script>
     
 </body>
 </html>

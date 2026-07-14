@@ -16,9 +16,9 @@
 
 <nav class="navbar">
 
-   <a href="index.html" class="logo">
-  <img src="Image/Seven-Peak-Logo-transparent.png" alt="Seven-peak Logo">
-</a>
+    <a href="index.html" class="logo">
+        <img src="Image/Seven-Peak-Logo-transparent.png" alt="Seven Peak Logo">
+    </a>
 
     <div class="search-box">
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -27,10 +27,77 @@
 
     <div class="nav-links">
         <a href="signup.html">Sign up</a>
-        <i class="fa-solid fa-bars menu"></i>
+
+
+        <button class="menu-btn" id="menuBtn">
+    <img src="Icons/hamburger menu.svg" alt="Menu">
+</button>
+
+   
     </div>
 
 </nav>
+
+<!-- Overlay -->
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<!-- Side Menu -->
+<aside class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+        <h3>Main Menu</h3>
+        <button class="close-menu" id="closeMenu">&times;</button>
+    </div>
+
+    <nav class="side-menu-links">
+        <a href="index.html">Home <span>&rsaquo;</span></a>
+        <a href="destinations.html">Destination <span>&rsaquo;</span></a>
+        <a href="about.html">About <span>&rsaquo;</span></a>
+        <a href="blog.html">Blog <span>&rsaquo;</span></a>
+        <a href="faq.html">FAQ <span>&rsaquo;</span></a>
+        <a href="contact.html" class="contact-link">Contact</a>
+    </nav>
+
+    <div class="side-menu-social">
+        <a href="#"><img src="Icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="Icons/instagram.svg" alt="Instagram"></a>
+    </div>
+</aside>
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const menuBtn = document.getElementById("menuBtn");
+    const sideMenu = document.getElementById("sideMenu");
+    const menuOverlay = document.getElementById("menuOverlay");
+    const closeMenu = document.getElementById("closeMenu");
+
+    console.log(menuBtn);
+    console.log(sideMenu);
+
+    menuBtn.addEventListener("click", () => {
+        console.log("Menu clicked");
+        sideMenu.classList.add("active");
+        menuOverlay.classList.add("active");
+    });
+
+    function closeSideMenu() {
+        sideMenu.classList.remove("active");
+        menuOverlay.classList.remove("active");
+    }
+
+    closeMenu.addEventListener("click", closeSideMenu);
+    menuOverlay.addEventListener("click", closeSideMenu);
+
+});
+</script>
+
+
+
+
+
 
 </body>
 </html>
