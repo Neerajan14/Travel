@@ -69,7 +69,7 @@
 
 /* popular-country */
 .popular-country{
-    padding:50px 0;
+    padding:50px 0 0 0;
     background:#fff;
 }
 
@@ -160,7 +160,7 @@
 
 /* destination */
 .destination-top{
-    padding:50px 0 30px;
+    padding:30px 0 30px;
     background:#fff;
 }
 
@@ -436,6 +436,14 @@ div.search-box input[type="text"]::placeholder {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+    transition: all 0.3s ease;
+     cursor: pointer; 
+}
+
+.trips-cards:hover {
+  transform: translateY(-5px);        
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15); 
+  background-color: #f8f9fa;          /
 }
 
 .card{
@@ -628,61 +636,69 @@ div.search-box input[type="text"]::placeholder {
 }
 
 
-.booking-banner{
+.booking-banner {
     position: relative;
     width: 100%;
-    min-height: 320px;
+    min-height: 370px;
     background: url("../Image/booking.jpg") center center / cover no-repeat;
     display: flex;
     align-items: center;
     overflow: hidden;
 }
 
-.booking-overlay{
+
+.booking-overlay {
     position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.15);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+    z-index: 1;
 }
 
-.booking-content{
+
+.booking-content {
     position: relative;
     z-index: 2;
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 80px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.booking-text h2{
-    color: #fff;
-    font-size: 58px;
-    font-weight: 700;
-    line-height: 1.15;
+
+.booking-text h2 {
+    
+    font-family: "DM Serif Display", serif;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #ffffff;
+    margin: 0;
 }
 
-.booking-btn{
-    width: 180px;
-    height: 56px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: #2563eb;
-    color: #fff;
+.booking-btn {
+    
+    display: inline-block;
+    padding: 14px 45px;
+    background: #2563EB;
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: .3s;
+    border-radius: 6px; 
+    font-weight: 500;
+    font-size: 15px;
+    transition: background 0.3s ease;
+    white-space: nowrap;
 }
 
-.booking-btn:hover{
-    background:#1d4ed8;
+.booking-btn:hover {
+    background: #1d4ed8;
 }
+
 
 
 
@@ -901,6 +917,7 @@ div.search-box input[type="text"]::placeholder {
      .trips-cards{
         grid-template-columns: 1fr;
         gap: 16px;
+        
     }
 
     .card-image > img{
