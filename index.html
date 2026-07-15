@@ -8,6 +8,8 @@
     
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -123,7 +125,7 @@
 
             <div>
                 <h4>When</h4>
-                <input type="date">
+                 <input type="text" id="tourDate" placeholder="Select Date">
             </div>
         </div>
 
@@ -132,12 +134,13 @@
 
             <div>
                 <h4>Tour Type</h4>
-                   <select>
-            <option>All Tour</option>
-            <option>Adventure</option>
-            <option>Nature</option>
-            <option>Cultural</option>
-        </select>
+                <select id="tourType">
+                <option value="">All Tours</option>
+                <option>Adventure</option>
+                <option>Nature</option>
+                <option>Cultural</option>
+                </select>
+                   
 
             </div>
         </div>
@@ -1166,22 +1169,20 @@
 <!-- Footer -->
 <div id="footer"></div>
 
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+<!-- Select2 -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 <script>
 
 
-    fetch("footer.html")
-.then(res => res.text())
-.then(data => {
-    document.getElementById("footer").innerHTML = data;
 
-
-    const filterBtn = document.getElementById("filterToggle");
-const filterPanel = document.getElementById("filterPanel");
-
-filterBtn.addEventListener("click", () => {
-    filterPanel.classList.toggle("show");
-});
-});
 
   // ===== Slide-in menu =====
   const menuToggle = document.getElementById('menuToggle');
@@ -1269,6 +1270,42 @@ filterBtn.addEventListener("click", () => {
         });
     });
 });
+
+
+    fetch("footer.html")
+.then(res => res.text())
+.then(data => {
+    document.getElementById("footer").innerHTML = data;
+
+
+    const filterBtn = document.getElementById("filterToggle");
+const filterPanel = document.getElementById("filterPanel");
+
+filterBtn.addEventListener("click", () => {
+    filterPanel.classList.toggle("show");
+});
+});
+
+
+// ===== jQuery Datepicker & Tour Type =====
+$(document).ready(function () {
+
+    // Calendar
+    $("#tourDate").datepicker({
+        dateFormat: "dd M yy",
+        minDate: 0
+    });
+
+    // Tour Type
+    $("#tourType").select2({
+        placeholder: "Select Tour Type",
+        allowClear: true,
+        width: "100%"
+    });
+
+});
+
+
 
 </script>
 

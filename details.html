@@ -9,6 +9,16 @@
     ">
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- jQuery UI CSS -->
+<link rel="stylesheet"
+href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+<!-- Select2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+rel="stylesheet">
+
+
 </head>
 <body>
 
@@ -272,23 +282,29 @@
 
     <div class="form-group">
         <label for="from">From</label>
-        <input type="date" id="from">
+        <input type="text" id="from" placeholder="Select start date">
     </div>
 
     <div class="form-group">
         <label for="to">To</label>
-        <input type="date" id="to">
+        <input type="text" id="to" placeholder="Select end date">
     </div>
 
     <div class="form-group">
         <label for="guest">No. Of Guests</label>
 
-        <select id="guest">
-            <option>1 Adult</option>
-            <option>2 Adults</option>
-            <option>3 Adults</option>
-            <option>4 Adults</option>
-        </select>
+      <select id="guest" style="width:100%;">
+    <option value="">Select Guests</option>
+    <option>1 Adult</option>
+    <option>2 Adults</option>
+    <option>3 Adults</option>
+    <option>4 Adults</option>
+    <option>5 Adults</option>
+    <option>6 Adults</option>
+   </select>
+
+
+
     </div>
 
     <div class="subtotal">
@@ -883,12 +899,120 @@
     <!-- Footer -->
     <div id="footer"></div>
 
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
     <script>
-        fetch("nav.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("navbar").innerHTML = data;
-        });
+     function initNavbar() {
+    const menuBtn = document.getElementById("menuBtn");
+    const sideMenu = document.getElementById("sideMenu");
+    const menuOverlay = document.getElementById("menuOverlay");
+    const closeMenu = document.getElementById("closeMenu");
+
+    if (!menuBtn) return;
+
+    menuBtn.onclick = () => {
+        sideMenu.classList.add("active");
+        menuOverlay.classList.add("active");
+    };
+
+    closeMenu.onclick = () => {
+        sideMenu.classList.remove("active");
+        menuOverlay.classList.remove("active");
+    };
+
+    menuOverlay.onclick = () => {
+        sideMenu.classList.remove("active");
+        menuOverlay.classList.remove("active");
+    };
+}
+
+fetch("nav.html")
+.then(res => res.text())
+.then(data => {
+    document.getElementById("navbar").innerHTML = data;
+    initNavbar();
+});
+
+
+
+  // ===== Booking Date Picker =====
+$("#from").datepicker({
+    dateFormat: "dd M yy",
+    minDate: 0,
+    onSelect: function (selectedDate) {
+        $("#to").datepicker("option", "minDate", selectedDate);
+    }
+});
+
+$("#to").datepicker({
+    dateFormat: "dd M yy",
+    minDate: 0
+});
+
+
+
+$("#guest").select2({
+    minimumResultsForSearch: Infinity, 
+    width: "100%"
+});
+
+
+
+  $(document).ready(function () {
+
+    // Hero Search Calendar
+    $("#tourDate").datepicker({
+        dateFormat: "dd M yy",
+        minDate: 0
+    });
+
+    // Hero Tour Type
+    $("#tourType").select2({
+        placeholder: "Select Tour Type",
+        allowClear: true,
+        width: "100%"
+    });
+
+    // Booking Card Dates
+    $("#from").datepicker({
+        dateFormat: "dd M yy",
+        minDate: 0,
+        onSelect: function (selectedDate) {
+            $("#to").datepicker("option", "minDate", selectedDate);
+        }
+    });
+
+    $("#to").datepicker({
+        dateFormat: "dd M yy",
+        minDate: 0
+    });
+
+    // Guests
+    $("#guest").select2({
+        minimumResultsForSearch: Infinity,
+        width: "100%"
+    });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         fetch("footer.html")
         .then(res => res.text())

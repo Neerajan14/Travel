@@ -424,6 +424,46 @@ body{
 }
 
 
+
+/* Select2 */
+
+.select2-container {
+    width: 100% !important;
+}
+
+.select2-selection--single {
+    border: none !important;
+    height: 38px !important;
+    display: flex !important;
+    align-items: center !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.select2-selection__rendered {
+    line-height: 38px !important;
+    padding-left: 0 !important;
+    font-size: 15px;
+    color: #555;
+}
+
+.select2-selection__arrow {
+    height: 38px !important;
+}
+
+/* Date Input */
+
+#tourDate {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+
 .featured{
     padding: 80px 0;
     background: #f5f8ff;
