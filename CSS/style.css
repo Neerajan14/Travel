@@ -953,18 +953,24 @@ body{
 
 .testimonial-card h4{
 
-    color:#3464F6;
+    color:#2563EB;
 
     margin-bottom:18px;
 
     font-size:18px;
+
+    font-weight: 500;
+
+    font-style: medium;
 }
 
 .testimonial-card p{
 
     font-size:15px;
 
-    line-height:1.8;
+    line-height: 29px;
+
+
 
     color:#05073C;
 
@@ -1005,13 +1011,26 @@ body{
     font-size:15px;
 
     color:#3464F6;
+
+    font-weight: 500;
+
+    font-style: medium;
+
+    line-height: 23px;
+
 }
 
 .user span{
 
     font-size:13px;
 
-    color: #000;;
+    color: #05073C;
+
+    font-weight: 400;
+
+    font-style: regular;
+
+    line-height: 20px;
 }
 
 
@@ -1034,17 +1053,27 @@ body{
 
 .stat p{
 
-    color:#dbe4ff;
+    color:#FFFFFF;
 
-    line-height:1.6;
+    line-height:28px;
+
+    font-weight: 400;
+
+    font-size: 14px;
+
+    font-style: regular;
 }
 
 
 .stat h3{
+    font-weight: 700;
+    font-style: Bold;
+    color:#FFFFFF;
+
     display:flex;
     align-items:center;
     gap:10px;
-    font-size:32px;
+    font-size:28px;
     margin-bottom:10px;
 }
 
@@ -1057,6 +1086,7 @@ body{
     width: 22px;
     height:22px;
 }
+
 
 
 
