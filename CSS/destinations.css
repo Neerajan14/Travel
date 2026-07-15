@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display&family=Inter:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin:0;
@@ -80,7 +80,10 @@
 }
 
 .popular-country h2{
-    font-size:32px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: semi-bold;
+    font-size:30px;
     margin-bottom:25px;
 }
 
@@ -90,6 +93,10 @@
 }
 
 .country-track{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: regular;
     display:flex;
     width: max-content;
     gap:15px;
@@ -121,9 +128,9 @@
 }
 
 .country-btn.active{
-    background:#2F66F6;
+    background:#2563EB;
     color:#fff;
-    border-color:#2F66F6;
+    border-color:#2563EB;
 }
 
 .country-btn.active img{
@@ -131,9 +138,9 @@
 }
 
 .country-btn:hover{
-    background:#2F66F6;
+    background:#2563EB;
     color:#fff;
-    border-color:#2F66F6;
+    border-color:#2563EB;
 }
 
 .country-btn:hover img{
@@ -172,15 +179,20 @@
 }
 
 .title h2{
-    font-size:38px;
-    font-weight:700;
+    font-family: "Inter", sans-serif;
+    font-size:30px;
+    font-weight:600;
+    font-style: semi-bold;
+    line-height: 28px;
     color:#1f2937;
 }
 
 .title span{
-    font-size:18px;
-    color:#7a7a7a;
-    font-weight:500;
+    font-family: "Inter", sans-serif;
+    font-size:20px;
+    line-height: 28px;
+    color:#6B7280;
+    font-weight:400;
 }
 
 .destination-actions{
@@ -215,6 +227,11 @@
     font-size:14px;
 }
 
+div.search-box input[type="text"]::placeholder {
+    color: #CCCCCC !important;
+    opacity: 1;
+}
+
 /* Filter Button */
 
 .filter-btn{
@@ -222,7 +239,9 @@
     align-items:center;
     gap:8px;
     padding:0 18px;
-    height:46px;
+    height:37px;
+    top: 6px;
+    width: 94.1px;
     border:1px solid #e3e6ef;
     border-radius:30px;
     background:#fff;
@@ -267,14 +286,17 @@
 }
 
 .filter-item h4{
+    font-weight: 500;
     margin-bottom:18px;
-    font-size:18px;
-    color:#1f2937;
+    font-size:22px;
+    color:#05073C;
 }
 
 .price-inputs{
     display:flex;
     gap:12px;
+    align-items: center; 
+    justify-content: center;
 }
 
 .price-inputs input{
@@ -284,15 +306,26 @@
     border-radius:8px;
     padding:0 12px;
     outline:none;
+    text-align: center; 
+}
+
+.price-inputs span {
+    flex-shrink: 0;
+    color: #666; 
+    font-size: 16px;
 }
 
 .filter-item label{
+    font-weight: 400;
+    color:#05073C;
+    font-style: regular;
+    line-height: 20px;
     display:flex;
     align-items:center;
     gap:10px;
     margin-bottom:12px;
     cursor:pointer;
-    font-size:15px;
+    font-size:18px;
 }
 
 .filter-item input[type="checkbox"]{
@@ -307,15 +340,21 @@
 }
 
 .apply-btn{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
     padding:12px 20px;
     border:none;
     border-radius:8px;
-    background:#2F6BFF;
+    background:#2563EB;
     color:#fff;
     cursor:pointer;
 }
 
 .reset-btn{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
     padding:12px 20px;
     border:1px solid #ddd;
     border-radius:8px;
@@ -454,6 +493,9 @@
 
 .card-content h3{
     padding: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 
@@ -462,6 +504,7 @@
     align-items:center;
     gap:4px;
     margin:10px 0;
+
 }
 
 .rating img{
@@ -472,12 +515,25 @@
 .rating span{
     margin-left:6px;
     font-size:15px;
-    color:#444;
+    color:#717171;
 }
 
 
-.location,
+.location
+{
+ font-size: 12.29px;
+ font-weight: 400;
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ color: #717171;
+}
+
+
 .days{
+ font-size: 12.29px;
+ font-weight: 400;
+ line-height: 24.38px;
  display: flex;
  align-items: center;
  gap: 6px;
@@ -510,6 +566,9 @@
 .price{
     margin-left: auto;
     text-align: right;
+    font-style: regular;
+    font-weight: 400;
+    color: #05073C;
 }
 
 
@@ -551,7 +610,7 @@
 }
 
 .page-number.active{
-    background:#2563eb;
+    background:#2563EB;
     color:#fff;
 }
 
