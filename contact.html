@@ -5,19 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 
-    <!-- Navbar CSS -->
-    <link rel="stylesheet" href="CSS/navbar.css">
+  
 
     <!-- Contact CSS -->
     <link rel="stylesheet" href="CSS/contact.css">
 
-    <!-- Footer CSS -->
-    <link rel="stylesheet" href="CSS/footer.css">
+    
 </head>
 <body>
 
     <!-- Navbar -->
-    <div id="navbar"></div>
+    <nav class="navbar">
+
+    <a href="index.html" class="logo">
+        <img src="Image/Seven-Peak-Logo-transparent.png" alt="Seven Peak Logo">
+    </a>
+
+  <div class="search-box">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input
+        type="search"
+        name="destination-search"
+        placeholder="Search destinations or activities"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false">
+     </div>
+
+    <div class="nav-links">
+        <a href="signup.html">Sign up</a>
+
+
+        <button class="menu-btn" id="menuBtn">
+    <img src="Icons/hamburger menu.svg" alt="Menu">
+</button>
+
+   
+    </div>
+
+</nav>
+
+<!-- Overlay -->
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<!-- Side Menu -->
+<aside class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+        <h3>Main Menu</h3>
+        <button class="close-menu" id="closeMenu">&times;</button>
+    </div>
+
+    <nav class="side-menu-links">
+        <a href="index.html">Home <span>&rsaquo;</span></a>
+        <a href="destinations.html">Destination <span>&rsaquo;</span></a>
+        <a href="about.html">About <span>&rsaquo;</span></a>
+        <a href="blog.html">Blog <span>&rsaquo;</span></a>
+        <a href="faq.html">FAQ <span>&rsaquo;</span></a>
+        <a href="contact.html" class="contact-link">Contact</a>
+    </nav>
+
+    <div class="side-menu-social">
+        <a href="#"><img src="Icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="Icons/instagram.svg" alt="Instagram"></a>
+    </div>
+</aside>
+
 
     <!-- Contact Hero -->
     <section class="contact-hero">
@@ -36,83 +89,99 @@
 
     <!-- Your Contact Page Content -->
 
-    <section class="contact-section">
+    <!-- Contact Section -->
+<section class="contact-section">
+
     <div class="contact-container">
 
-        <!-- Left: Form Card -->
-        <div class="contact-form-card">
-            <p class="eyebrow">Contact Us</p>
+        <!-- Left -->
+        <div class="contact-form">
+
+            <span class="contact-subtitle">Contact Us</span>
+
             <h2>Get In Touch</h2>
 
-            <form class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your Name...">
+            <form>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="you@email.com">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your Name...">
+                </div>
 
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" placeholder="Title...">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="example@email.com">
+                </div>
 
-                <label for="message">Message</label>
-                <textarea id="message" rows="5" placeholder="Type Here..."></textarea>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Title...">
+                </div>
 
-                <button type="submit" class="send-btn">Send Now</button>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Type Here..."></textarea>
+                </div>
+
+                <button type="submit">Send Now</button>
+
             </form>
+
         </div>
 
-        <!-- Right: Info + Map -->
+        <!-- Right -->
         <div class="contact-info">
-            <p class="info-desc">
-                Our company is based on the travel and tour related service we provide
-                the best service and great experience with great adventure trips and
-                amazing memories.
+
+            <p class="contact-text">
+                Our company is based on the travel and tour related service we
+                provide the best service and great experience with great
+                adventure trips and amazing memories.
             </p>
 
             <div class="info-grid">
-                <div class="info-item">
-                    <div class="info-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                    </div>
-                    <p class="info-label">Phone Number</p>
-                    <p class="info-value">+977 1234567890</p>
+
+                <div class="info-card">
+                   <img src="Icons/phone.svg" alt="Phone">
+                    <h4>Phone Number</h4>
+                    <p>+977 1234567890</p>
                 </div>
 
-                <div class="info-item">
-                    <div class="info-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    </div>
-                    <p class="info-label">Email Address</p>
-                    <p class="info-value">name@example.com</p>
+                <div class="info-card">
+                    <img src="Icons/mail.svg" alt="Email">
+                    <h4>Email Address</h4>
+                    <p>name@example.com</p>
                 </div>
 
-                <div class="info-item">
-                    <div class="info-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.52 3.48A11.94 11.94 0 0 0 12.06 0C5.5 0 .17 5.33.17 11.89c0 2.1.55 4.14 1.6 5.94L0 24l6.33-1.66a11.86 11.86 0 0 0 5.72 1.46h.01c6.56 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.16-3.43-8.43z"></path></svg>
-                    </div>
-                    <p class="info-label">WhatsApp</p>
-                    <p class="info-value">+977 1234567890</p>
+                <div class="info-card">
+                    <img src="Icons/whatsapp.svg" alt="WhatsApp">
+                    <h4>WhatsApp</h4>
+                    <p>+977 1234567890</p>
                 </div>
 
-                <div class="info-item">
-                    <div class="info-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                    </div>
-                    <p class="info-label">Location</p>
-                    <p class="info-value">123 xyz Street, Kathmandu Koteshwor 45600, Nepal.</p>
+                <div class="info-card">
+                    <img src="Icons/location-marker1.svg" alt="Location">
+                    <h4>Location</h4>
+                    <p> Kathmandu, Nepal</p>
                 </div>
+
             </div>
 
-            <div class="contact-map">
+            <div class="map-box">
+
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    src="https://www.google.com/maps?q=Kathmandu,Nepal&output=embed"
+                    loading="lazy">
                 </iframe>
+
             </div>
+
         </div>
 
     </div>
+
 </section>
+
+    
 
 
 
@@ -120,11 +189,11 @@
     <div id="footer"></div>
 
     <script>
-        fetch("navbar.html")
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById("navbar").innerHTML = data;
-            });
+
+        
+ 
+
+            
 
         fetch("footer.html")
             .then(res => res.text())

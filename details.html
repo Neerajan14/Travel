@@ -400,15 +400,16 @@ rel="stylesheet">
 
 <section class="tour-map-section">
 
-    <div class="tour-map-container">
+     <div class="map-box">
 
-        <h2>Tour Map</h2>
+                <iframe
+                    src="https://www.google.com/maps?q=Kathmandu,Nepal&output=embed"
+                    loading="lazy">
+                </iframe>
 
-        <div class="tour-map">
-            <img src="Image/Mounteverest.png" alt="Tour Map">
-        </div>
+            </div>
 
-    </div>
+   
 
 </section>
 
@@ -907,7 +908,9 @@ rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <script>
-     function initNavbar() {
+
+
+    function initNavbar() {
     const menuBtn = document.getElementById("menuBtn");
     const sideMenu = document.getElementById("sideMenu");
     const menuOverlay = document.getElementById("menuOverlay");
