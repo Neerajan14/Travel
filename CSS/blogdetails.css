@@ -546,46 +546,217 @@ RELATED BLOGS
 
 
 
-/* Responsive */
-
-@media(max-width:992px){
-
-    .related-grid{
-        grid-template-columns:1fr;
-    }
-
-    .related-card img{
-        height:250px;
-    }
-
+/* Global safety net - place OUTSIDE the media query, near top of CSS file */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-/*=========================
-Responsive
-=========================*/
-
-@media(max-width:768px){
-
-    .comment{
-        flex-direction:column;
-    }
-
-    .comment-top{
-        flex-direction:column;
-        align-items:flex-start;
-        gap:8px;
-    }
-
-    .form-row{
-        grid-template-columns:1fr;
-    }
-
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
-@media(max-width:992px){
-
-.blog-wrapper{
-    grid-template-columns:1fr;
+img, video {
+  max-width: 100%;
+  height: auto;
 }
+
+
+@media (max-width: 768px) {
+
+  /* Hero */
+  .blog-hero {
+    height: 220px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .breadcrumb {
+    font-size: 13px;
+  }
+
+  /* Flatten .blog-wrapper so .blog-content and .sidebar become
+     direct flex items of .blog-container, alongside .related-blogs */
+  .blog-wrapper {
+    display: contents;
+  }
+
+  /* Shared parent of .blog-wrapper and .related-blogs.
+     Controls the visual order on mobile. */
+  .blog-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    gap: 24px;
+  }
+
+  .blog-content {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .blog-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .blog-content h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .blog-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* Share row */
+  .share {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Comments */
+  .comments-section h3 {
+    font-size: 16px;
+  }
+
+  .comment {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .comment img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .comment-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .comment-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .comment-content p {
+    font-size: 13px;
+  }
+
+  /* Comment form */
+  .comment-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .comment-form .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .comment-form input,
+  .comment-form textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .comment-form button {
+    width: 100%;
+  }
+
+  /* Related blogs - now positioned between content and sidebar via order */
+  .related-blogs {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    padding: 24px 0;
+    margin: 0;
+    border: none;
+  }
+
+  .related-grid {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    gap: 0;
+  }
+
+  .related-card {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    padding: 0 0 24px 0;
+    margin: 0 0 24px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .related-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .related-card img {
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .related-card .category {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    margin-top: 12px;
+    display: block;
+  }
+
+  .related-card h3 {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 6px 0;
+  }
+
+  .related-card p {
+    font-size: 13px;
+    color: #666;
+  }
+
+  .related-card a {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  /* Sidebar - now positioned last via order */
+  .sidebar {
+    order: 3;
+    width: 100%;
+    max-width: 100%;
+    margin: 24px 0 0 0;
+  }
+
+  .sidebar .widget {
+    width: 100%;
+    max-width: 100%;
+  }
 
 }
