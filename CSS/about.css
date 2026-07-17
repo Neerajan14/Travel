@@ -18,10 +18,15 @@ body{
 ========================= */
 
 .about-hero{
-    position:relative;
+    position: relative;
     width:100%;
-    height:330px;
-    background:url("../Images/about-banner.jpg") center/cover no-repeat;
+    height:450px;
+
+    background-image:url("../Image/about-banner.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
     display:flex;
     justify-content:center;
     align-items:center;
@@ -29,15 +34,18 @@ body{
 
 .about-overlay{
     position:absolute;
-    inset:0;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
     background:rgba(0,0,0,.35);
 }
 
 .about-content{
     position:relative;
     z-index:2;
-    text-align:center;
     color:#fff;
+    text-align:center;
 }
 
 .about-content h1{
@@ -501,6 +509,205 @@ HELP SECTION
 
 .help-card a:hover{
     text-decoration:underline;
+}
+
+
+/* ===========================
+   MOBILE VIEW (max-width: 768px)
+   Add this block to the end of your About CSS file
+=========================== */
+
+@media (max-width: 768px){
+
+    /* HERO */
+    .about-hero{
+        height:300px;
+    }
+
+    .about-content h1{
+        font-size:32px;
+        margin-bottom:8px;
+    }
+
+    .breadcrumb{
+        font-size:13px;
+    }
+
+    /* SECTION SPACING */
+    .about-section{
+        padding:50px 0;
+    }
+
+    .container{
+        width:88%;
+    }
+
+    .section-title{
+        font-size:22px;
+        line-height:28px;
+        margin-bottom:35px;
+        text-align:left;
+    }
+
+    /* FEATURES: 2 columns like screenshot */
+    .features{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px 20px;
+        margin-bottom:55px;
+    }
+
+    .feature img{
+        width:26px;
+        margin-bottom:14px;
+    }
+
+    .feature h4{
+        font-size:15px;
+        line-height:19px;
+        margin-bottom:8px;
+    }
+
+    .feature p{
+        font-size:13px;
+        line-height:1.6;
+    }
+
+    /* STORY: stack to single column */
+    .story{
+        grid-template-columns:1fr;
+        gap:30px;
+        margin-bottom:55px;
+    }
+
+    .story-images{
+        order:2;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .story-images img{
+        width:100%;
+    }
+
+    .story-text{
+        order:1;
+    }
+
+    .story-text span{
+        font-size:13px;
+    }
+
+    .story-text h2{
+        font-size:22px;
+        line-height:28px;
+        margin:14px 0;
+    }
+
+    .story-text p{
+        font-size:14px;
+        line-height:22px;
+    }
+
+    .btn-story{
+        font-size:14px;
+        padding:10px 24px;
+    }
+
+    /* BOTTOM COUNTER */
+    .about-bottom h2{
+        font-size:22px;
+        line-height:28px;
+    }
+
+    .about-bottom p{
+        font-size:14px;
+        line-height:22px;
+    }
+
+    .counter{
+        grid-template-columns:1fr;
+        gap:14px;
+    }
+
+    .counter-box{
+        padding:18px 20px;
+        text-align:left;
+    }
+
+    .counter-box h2{
+        font-size:24px;
+        line-height:30px;
+        margin-bottom:2px;
+    }
+
+    .counter-box p{
+        font-size:14px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials{
+        padding:45px 0;
+    }
+
+    .testimonials h2{
+        font-size:20px;
+        margin-bottom:25px;
+    }
+
+    .testimonial-cards{
+        flex-direction:column;
+        margin-bottom:35px;
+        gap:20px;
+    }
+
+    .testimonial-card{
+        padding:22px;
+    }
+
+    .stats{
+        flex-direction:column;
+        gap:22px;
+    }
+
+    .stat h3{
+        font-size:24px;
+    }
+
+    /* HELP SECTION */
+    .help-section{
+        padding:45px 0;
+    }
+
+    .help-heading{
+        text-align:left;
+        margin-bottom:25px;
+    }
+
+    .help-heading h2{
+        font-size:20px;
+        line-height:26px;
+    }
+
+    .help-cards{
+        grid-template-columns:1fr;
+        gap:0;
+    }
+
+    .help-card{
+        padding:24px 0;
+        border:none;
+        border-top:1px solid #e7e7e7;
+        border-radius:0;
+    }
+
+    .help-card:first-child{
+        border-top:none;
+    }
+
+    .help-card:hover{
+        transform:none;
+        box-shadow:none;
+    }
 }
 
 
