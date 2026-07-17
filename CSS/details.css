@@ -493,6 +493,87 @@ body{
 }
 
 
+/* Trekking & Climbing Gear Section */
+
+.gear-section{
+    width:95%;
+    max-width:1320px;
+    margin:60px auto;
+}
+
+.gear-section h2{
+    font-family:"Inter", sans-serif;
+    font-weight:600;
+    font-size:28px;
+    color:#012E41;
+    margin-bottom:30px;
+}
+
+.gear-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:24px;
+}
+
+.gear-card{
+    border:1px solid #E6E6E6;
+    border-radius:10px;
+    padding:24px;
+    background:#fff;
+}
+
+.gear-card h3{
+    font-family:"Inter", sans-serif;
+    font-weight:600;
+    font-size:18px;
+    color:#012E41;
+    margin-bottom:16px;
+    padding-bottom:12px;
+    border-bottom:1px solid #ECECEC;
+}
+
+.gear-card ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.gear-card li{
+    position:relative;
+    font-size:15px;
+    line-height:1.6;
+    color:#555555;
+    padding-left:20px;
+    margin-bottom:10px;
+}
+
+.gear-card li::before{
+    content:"•";
+    position:absolute;
+    left:0;
+    color:#0077CC;
+    font-weight:700;
+}
+
+.gear-card li:last-child{
+    margin-bottom:0;
+}
+
+.gear-note{
+    margin-top:16px;
+    padding:12px 14px;
+    background:#F8F8F8;
+    border-left:3px solid #0077CC;
+    border-radius:4px;
+    font-size:13px;
+    color:#555;
+}
+
+.gear-note strong{
+    color:#012E41;
+}
+
+
 
 /* Tour Map */
 
@@ -543,6 +624,15 @@ body{
     align-items:center;
     margin-bottom:30px;
 }
+
+.overview-left .review-section {
+    width: 100%;
+    margin-top: 0;
+    padding: 24px;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+}
+
 
 .review-header h3{
     font-size:18px;
@@ -1001,6 +1091,39 @@ body{
 .tour-map-container{
     width: 100%;
 }
+
+
+
+.gear-section{
+        width:88%;
+        margin:40px auto;
+    }
+
+    .gear-section h2{
+        font-size:22px;
+        margin-bottom:20px;
+    }
+
+    .gear-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .gear-card{
+        padding:18px;
+    }
+
+    .gear-card h3{
+        font-size:16px;
+        margin-bottom:12px;
+        padding-bottom:10px;
+    }
+
+    .gear-card li{
+        font-size:14px;
+    }
+
+    
 
 /* =========================
    Reviews Mobile

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin:0;
     padding:0;
@@ -187,6 +187,7 @@ body{
 }
 
 .faq-container h2{
+    font-family: DM Sans;
     font-weight: 400;
     text-align:center;
     font-size:30px;
@@ -204,6 +205,7 @@ body{
 }
 
 .faq-question{
+    font-family: "Inter";
     width:100%;
     background:#fff;
     border:none;
@@ -213,13 +215,13 @@ body{
     align-items:center;
     font-size:16px;
     cursor:pointer;
-    color:#333;
-    font-weight:500;
+    color:#0A0A0A;
+    font-weight:400;
 }
 
 .faq-question span{
     font-size:22px;
-    color:#999;
+    color:#717182;
     transition:.3s;
 }
 
@@ -233,7 +235,7 @@ body{
 .faq-answer p{
     padding:20px 25px;
     line-height:1.7;
-    color:#666;
+    color:#0A0A0A;
 }
 
 .faq-item.active .faq-answer{
@@ -397,19 +399,20 @@ body{
         height:36px;
     }
 
+.booking-banner{
+    width:100%;
+    min-height:260px;
+    position:relative;
+    background-image:url("../Image/booking.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
 
 
-    .booking-banner{
-        min-height: 260px;
-        position:relative;
-        background:url("Image/booking.jpg") center center/cover no-repeat;
-        margin: 80px 0 0;
-        min-height:260px;
-        display:flex;
-        align-items:center;
-        overflow:hidden;
-
-    }
 
     .booking-content{
         flex-direction: column;

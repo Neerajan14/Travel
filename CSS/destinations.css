@@ -591,8 +591,8 @@ div.search-box input[type="text"]::placeholder {
     justify-content:center;
     align-items:center;
     gap:12px;
-    flex-wrap:wrap;
 }
+
 
 .page-link,
 .page-number,
@@ -602,25 +602,21 @@ div.search-box input[type="text"]::placeholder {
     text-decoration:none;
 }
 
-.page-number{
-    width:36px;
-    height:36px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:10px;
-    transition:0.3s;
+.page-number,
+.page-link{
+    padding:10px 16px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    text-decoration:none;
+    color:#333;
+    cursor:pointer;
 }
 
 .page-number:hover{
-    background:#2563eb;
-    color:#fff;
-}
-
-.page-number.active{
     background:#2563EB;
     color:#fff;
 }
+
 
 .page-link{
     padding:8px 12px;
@@ -634,6 +630,8 @@ div.search-box input[type="text"]::placeholder {
 .dots{
     padding:0 4px;
 }
+
+
 
 
 .booking-banner {
@@ -1002,19 +1000,21 @@ div.search-box input[type="text"]::placeholder {
         padding: 6px 8px;
     }
 
+
+    .booking-banner{
+    width:100%;
+    min-height:260px;
+    position:relative;
+    background-image:url("../Image/booking.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
 }
 
-.booking-banner{
-        min-height: 260px;
-        position:relative;
-        background:url("Image/booking.jpg") center center/cover no-repeat;
-        margin: 80px 0 0;
-        min-height:260px;
-        display:flex;
-        align-items:center;
-        overflow:hidden;
 
-    }
 
     .booking-content{
         flex-direction: column;
@@ -1035,5 +1035,9 @@ div.search-box input[type="text"]::placeholder {
         height: 46px;
         font-size: 14px;
     }
+
+}
+
+
 
 
