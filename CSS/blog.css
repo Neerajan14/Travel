@@ -381,11 +381,11 @@
 
 
 
-.newsletter{
+.letter{
     width:100%;
 }
 
-.newsletter .widget-title{
+.letter .widget-title{
     font-family:"Inter", sans-serif;
     font-size:18px;
     font-weight:700;
@@ -393,7 +393,7 @@
     margin-bottom:18px;
 }
 
-.newsletter input{
+.letter input{
     width:100%;
     height:46px;
     padding:0 16px;
@@ -409,7 +409,7 @@
     margin-bottom:12px;
 }
 
-.newsletter input::placeholder{
+.letter input::placeholder{
     color:#B3B3B3;
 }
 
