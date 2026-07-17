@@ -21,7 +21,7 @@ body{
     width:100%;
     height:450px;
 
-    background-image:url("Image/blog.jpg");
+    background-image: url("../Image/blog.jpg");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
