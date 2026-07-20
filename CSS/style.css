@@ -1249,6 +1249,36 @@ body{
 }
 
 
+.article-link{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+}
+
+.article-card{
+    cursor:pointer;
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.article-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.article-image{
+    overflow:hidden;
+}
+
+.article-image img{
+    transition:transform .4s ease;
+}
+
+.article-card:hover .article-image img{
+    transform:scale(1.08);
+}
+
+
+
 
 .brands {
     text-align: center;
@@ -1383,27 +1413,54 @@ body{
 }
 
 /* Search Icon (Right) */
+/* Search Box */
 .nav-search{
     order:3;
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:flex-end;
     width:40px;
     height:40px;
-    padding:0;
-    border-radius:50%;
+    padding:0 10px;
+    border-radius:25px;
     background:rgba(255,255,255,.15);
+    overflow:hidden;
+    transition:all .35s ease;
+    cursor:pointer;
 }
 
+/* Expanded state */
+.nav-search.active{
+    width:180px;
+}
+
+/* Input */
 .nav-search input{
-    display:none;   
+    width:0;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:#fff;
+    font-size:14px;
+    transition:all .35s ease;
+    opacity:0;
 }
 
+.nav-search.active input{
+    width:130px;
+    opacity:1;
+    margin-right:8px;
+}
 
+.nav-search input::placeholder{
+    color:rgba(255,255,255,.8);
+}
 
+/* Icon */
 .nav-search i{
     font-size:18px;
     color:#fff;
+    flex-shrink:0;
 }
 
 /* Hide desktop Sign Up */
