@@ -222,6 +222,15 @@ body{
   font-weight: 500;
 }
 
+
+.side-menu-links .contact-link{
+     display: flex;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+
+
 .side-menu-links a:first-child {
   color: #3366ff;
 }
@@ -231,17 +240,33 @@ body{
   font-size: 18px;
 }
 
-.side-menu-links .contact-link {
-  border-bottom: none;
-  color: #3366ff;
-  padding-top: 20px;
-}
+
 
 .side-menu-social {
-  display: flex;
-  gap: 16px;
-  margin-top: auto;
-  padding-top: 20px;
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.side-menu-social a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f5f6fa;
+    color: #1f2a60;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+
+.side-menu-social a:hover {
+    background: #1f2a60;
+    color: #fff;
+    transform: translateY(-2px);
 }
 
 .side-menu-social img {
@@ -676,10 +701,23 @@ body{
     margin-top: 15px;
 }
 
-.price{
-    margin-left: auto;
-    text-align: right;
-    color: #05073C ;
+.tour-price{
+    display:flex;
+    align-items:center;
+    gap:4px;
+}
+
+.tour-price span{
+    
+    font-size:14px;
+    font-weight:400;
+    color:#05073C;
+}
+
+.tour-price strong{
+    font-size:14px;
+    font-weight:500;
+    color:#05073C;
 }
 
 
