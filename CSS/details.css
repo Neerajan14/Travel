@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin:0;
@@ -606,316 +606,6 @@ body{
 
 
 
-/* ===========================
-   REVIEW SECTION
-=========================== */
-
-.review-section{
-    padding:80px 0;
-}
-
-.review-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    margin-bottom:35px;
-}
-
-.review-header h3{
-    font-size:26px;
-    font-weight:700;
-    color:#222;
-}
-
-.review-header .count{
-    background:#f2f2f2;
-    padding:2px 8px;
-    border-radius:30px;
-    font-size:13px;
-    margin-left:6px;
-}
-
-.review-rating{
-    margin-top:8px;
-    font-size:16px;
-    color:#555;
-}
-
-.review-rating strong{
-    font-size:22px;
-    color:#222;
-}
-
-.review-btn{
-    padding:10px 22px;
-    border:1px solid #ddd;
-    background:#fff;
-    border-radius:8px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.review-btn:hover{
-    background:#0D6EFD;
-    color:#fff;
-    border-color:#0D6EFD;
-}
-
-/* ======================
-RATING BARS
-====================== */
-
-.rating-bars{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px 40px;
-    margin-bottom:45px;
-}
-
-.bar-item{
-    display:grid;
-    grid-template-columns:120px 1fr 45px;
-    align-items:center;
-    gap:15px;
-    font-size:14px;
-}
-
-.progress{
-    width:100%;
-    height:6px;
-    background:#ececec;
-    border-radius:20px;
-    overflow:hidden;
-}
-
-.fill{
-    height:100%;
-    background:#f5b301;
-    border-radius:20px;
-}
-
-/* ======================
-REVIEW CARD
-====================== */
-
-.review-card{
-    padding:30px 0;
-    border-top:1px solid #ececec;
-}
-
-.review-top{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-}
-
-.review-user{
-    display:flex;
-    gap:15px;
-}
-
-.review-user img{
-    width:54px;
-    height:54px;
-    border-radius:50%;
-    object-fit:cover;
-}
-
-.user-info h4{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    margin-bottom:5px;
-    font-size:17px;
-    font-weight:600;
-}
-
-.user-info span{
-    background:#f2f2f2;
-    font-size:11px;
-    padding:3px 8px;
-    border-radius:20px;
-}
-
-.user-info small{
-    color:#888;
-}
-
-.review-stars{
-    color:#f5b301;
-    margin:8px 0 10px;
-    font-size:15px;
-}
-
-.review-card h5{
-    font-size:20px;
-    margin-bottom:12px;
-    color:#222;
-}
-
-.review-card p{
-    color:#666;
-    line-height:1.8;
-    margin-bottom:20px;
-}
-
-/* ======================
-BOTTOM
-====================== */
-
-.review-footer{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.review-tags{
-    display:flex;
-    gap:8px;
-    flex-wrap:wrap;
-}
-
-.review-tags span{
-    border:1px solid #ddd;
-    padding:5px 10px;
-    border-radius:20px;
-    font-size:12px;
-    color:#666;
-}
-
-.helpful{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    color:#777;
-    font-size:14px;
-}
-
-.helpful i{
-    cursor:pointer;
-}
-
-/* ======================
-LOAD BUTTON
-====================== */
-
-.load-btn{
-    display:block;
-    margin:40px auto 0;
-    padding:14px 45px;
-    background:#2F6FED;
-    color:#fff;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:15px;
-    transition:.3s;
-}
-
-
-.review-stars{
-    display:flex;
-    align-items:center;
-    gap:4px;
-    margin:6px 0 12px;
-}
-
-.review-stars img{
-    width:16px;
-    height:16px;
-    object-fit:contain;
-}
-
-.review-stars small{
-    margin-left:8px;
-    color:#777;
-    font-size:13px;
-}
-
-
-/* Three Dot Button */
-
-.review-menu{
-    width:36px;
-    height:36px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:transparent;
-    border:none;
-    border-radius:50%;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.review-menu:hover{
-    background:#f5f5f5;
-}
-
-.review-menu img{
-    width:18px;
-    height:18px;
-}
-
-/* Helpful Button */
-
-.helpful-btn{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    background:transparent;
-    border:none;
-    color:#666;
-    font-size:14px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.helpful-btn img{
-    width:18px;
-    height:18px;
-}
-
-.helpful-btn:hover{
-    color:#0D6EFD;
-}
-
-.helpful-btn:hover img{
-    transform:scale(1.1);
-    transition:.3s;
-}
-
-
-
-.tags{
-    display:flex;
-    gap:10px;
-}
-
-.tags span{
-    padding:4px 10px;
-    border:1px solid #E5E7EB;
-    border-radius:20px;
-    font-size:12px;
-    color:#555;
-}
-
-.helpful{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    color:#7A7A7A;
-    font-size:14px;
-    cursor:pointer;
-}
-
-.helpful img{
-    width:18px;
-    height:18px;
-}
-
-
-
 /* Related Tours */
 
 .related-section{
@@ -928,8 +618,9 @@ LOAD BUTTON
 }
 
 .related-container h2{
-    font-size:32px;
-    color:#16214A;
+    font-family: "Inter";
+    font-size:30px;
+    color:#05073C;
     font-weight:700;
     margin-bottom:35px;
 }
@@ -941,6 +632,8 @@ LOAD BUTTON
 }
 
 .tour-card{
+    width: 300px;
+    height: 390px;
     background:#fff;
     border-radius:18px;
     overflow:hidden;
@@ -948,42 +641,50 @@ LOAD BUTTON
 }
 
 .tour-card:hover{
-    transform:translateY(-5px);
-}
-
-.tour-image{
-    position:relative;
+    transform:none;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
 }
 
 .tour-image img{
+    
     width:100%;
     height:180px;
     object-fit:cover;
     display:block;
 }
 
+.tour-image img{
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
 .wishlist-btn{
-    position:absolute;
-    top:15px;
-    right:15px;
-    width:38px;
-    height:38px;
-    border:none;
-    outline:none;
-    background:#fff;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:0;
-    cursor:pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0;
 }
 
 .wishlist-btn img{
-    width:18px;
-    height:18px;
-    display:block;
+    width: 18px;
+    height: 18px;
+    display: block;
 }
+
+
 
 .tour-content{
     background:#fff;
@@ -998,8 +699,8 @@ LOAD BUTTON
     display:flex;
     align-items:center;
     gap:6px;
-    color:#8A8FA5;
-    font-size:13px;
+    color:#717171;
+    font-size:12.29px;
 }
 
 .location img{
@@ -1007,30 +708,32 @@ LOAD BUTTON
 }
 
 .tour-content h3{
-    font-size:17px;
-    color:#25315D;
-    line-height:1.5;
-    margin:12px 0 15px;
+    font-family: "DM Sans";
     font-weight: 500;
+    font-size:16px;
+    color:#05073C;
+    line-height:24px;
+    margin:12px 0 15px;
 }
 
 .rating{
     display:flex;
     align-items:center;
-    gap:4px;
+    gap:3px;
+    margin-bottom:18px;
 }
-
 
 .rating img{
     width:14px;
 }
 
 .rating span{
-    display:inline;
-    margin-left:0;
-    font-size:14px;
-    color:#666;
-    white-space:nowrap;
+    font-family: "DM Sans";
+    font-weight: 400;
+    margin-left:8px;
+    font-size:12.29px;
+    color:#05073C;
+    white-space: nowrap;
 }
 
 .tour-footer{
@@ -1043,18 +746,42 @@ LOAD BUTTON
 }
 
 .tour-footer span{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 12.59px;
     display:flex;
     align-items:center;
     gap:6px;
-    color:#666;
+    color:#05073C;
 }
 
 .tour-footer img{
     width:14px;
 }
 
-.tour-footer strong{
-    color:#25315D;
+.tour-duration{
+ width: 18px;
+ height: 18px;
+ white-space: nowrap;
+}
+
+.tour-price{
+    display:flex;
+    align-items:center;
+    gap:4px;
+}
+
+.tour-price span{
+    
+    font-size:14px;
+    font-weight:400;
+    color:#05073C;
+}
+
+.tour-price strong{
+    font-size:14px;
+    font-weight:500;
+    color:#05073C;
 }
 
 .slider-buttons{
@@ -1078,6 +805,10 @@ LOAD BUTTON
 .slider-buttons img{
     width:18px;
 }
+
+
+
+
 
 
 /* ==========================
