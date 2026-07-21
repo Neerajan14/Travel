@@ -39,7 +39,8 @@
 }
 
 .contact-expert p{
-    font-size:16px;
+    font-weight: 500;
+    font-size:20px;
 }
 
 .contact-expert a{
@@ -54,6 +55,8 @@
 }
 
 .social span{
+    font-weight: 500;
+    font-size: 16.2px;
     margin-right:10px;
 }
 
@@ -78,6 +81,7 @@
 }
 
 .footer-column h3{
+    font-weight: 500;
     margin-bottom:20px;
     font-size:20px;
 }
@@ -86,6 +90,8 @@
     color:#dbe4ff;
     margin-bottom:15px;
     line-height:1.8;
+    font-weight: 400;
+    font-size: 14.41px;
 }
 
 .footer-column a{
