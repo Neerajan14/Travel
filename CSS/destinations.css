@@ -205,7 +205,7 @@
 
 /* Search Box */
 
-.search-box{
+.dest-search-box{
     display:flex;
     align-items:center;
     gap:10px;
@@ -217,18 +217,18 @@
     background:#fff;
 }
 
-.search-box img{
+.dest-search-box img{
     width:16px;
 }
 
-.search-box input{
+.dest-search-box input{
     border:none;
     outline:none;
     width:100%;
     font-size:14px;
 }
 
-div.search-box input[type="text"]::placeholder {
+div.dest-search-box input[type="text"]::placeholder {
     color: #CCCCCC !important;
     opacity: 1;
 }
