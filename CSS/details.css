@@ -462,6 +462,37 @@ body{
     margin-bottom:0;
 }
 
+
+.extra-item{
+    display:none;
+}
+
+.extra-item.show{
+    display:flex;
+}
+
+.itinerary-toggle{
+    margin-top:25px;
+}
+
+.toggle-btn{
+    background:#2E5BFF;
+    color:#fff;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.toggle-btn:hover{
+    background:#1d47e0;
+}
+
+
+
 .circle{
     width:30px;
     height:30px;

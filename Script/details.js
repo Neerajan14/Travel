@@ -118,3 +118,21 @@ $(document).ready(function () {
     }
 
 });
+
+
+const btn = document.getElementById("toggleItinerary");
+const extraItems = document.querySelectorAll(".extra-item");
+
+let expanded = false;
+
+btn.addEventListener("click", () => {
+
+    expanded = !expanded;
+
+    extraItems.forEach(item => {
+        item.classList.toggle("show", expanded);
+    });
+
+    btn.textContent = expanded ? "See Less" : "See More";
+
+});
