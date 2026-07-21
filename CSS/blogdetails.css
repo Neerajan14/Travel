@@ -296,6 +296,7 @@ BLOG DETAILS
 
 .blog-search-box{
     width:100%;
+    height: 48px;
     display:flex;
     align-items:center;
     background:#fff;
@@ -546,7 +547,7 @@ RELATED BLOGS
 
 
 
-/* Global safety net - place OUTSIDE the media query, near top of CSS file */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -577,14 +578,12 @@ img, video {
     font-size: 13px;
   }
 
-  /* Flatten .blog-wrapper so .blog-content and .sidebar become
-     direct flex items of .blog-container, alongside .related-blogs */
+ 
   .blog-wrapper {
     display: contents;
   }
 
-  /* Shared parent of .blog-wrapper and .related-blogs.
-     Controls the visual order on mobile. */
+  
   .blog-container {
     display: flex;
     flex-direction: column;
