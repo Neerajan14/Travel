@@ -436,6 +436,7 @@ body{
 }
 
 .timeline{
+    padding: 20px;
     position:relative;
     padding-left:12px;
 }
