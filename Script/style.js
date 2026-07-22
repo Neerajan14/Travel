@@ -18,3 +18,27 @@ document.addEventListener("click", (e) => {
         searchBox.classList.remove("active");
     }
 });
+
+
+
+const mobileSearchBar = document.getElementById("mobileSearchBar");
+const mobileSearchIcon = document.getElementById("mobileSearchIcon");
+const mobileSearchInput = document.getElementById("mobileSearchInput");
+
+if (mobileSearchBar && mobileSearchIcon && mobileSearchInput) {
+    mobileSearchIcon.addEventListener("click", function (e) {
+        e.stopPropagation();
+
+        mobileSearchBar.classList.toggle("active");
+
+        if (mobileSearchBar.classList.contains("active")) {
+            mobileSearchInput.focus();
+        }
+    });
+
+    document.addEventListener("click", function (e) {
+        if (!mobileSearchBar.contains(e.target)) {
+            mobileSearchBar.classList.remove("active");
+        }
+    });
+}

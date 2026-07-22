@@ -129,9 +129,9 @@
 }
 
 .country-btn.active{
-    background:#2563EB;
+    background:#0c2237;
     color:#fff;
-    border-color:#2563EB;
+    border-color:#0c2237;
 }
 
 .country-btn.active img{
@@ -139,9 +139,9 @@
 }
 
 .country-btn:hover{
-    background:#2563EB;
+    background:#0c2237;
     color:#fff;
-    border-color:#2563EB;
+    border-color:#0c2237;
 }
 
 .country-btn:hover img{
@@ -255,9 +255,9 @@ div.dest-search-box input[type="text"]::placeholder {
 }
 
 .filter-btn:hover{
-    background:#2F6BFF;
+    background:#0c2237;
     color:#fff;
-    border-color:#2F6BFF;
+    border-color:#0c2237;
 }
 
 .filter-btn:hover img{
@@ -290,7 +290,7 @@ div.dest-search-box input[type="text"]::placeholder {
     font-weight: 500;
     margin-bottom:18px;
     font-size:22px;
-    color:#05073C;
+    color:#0c2237;
 }
 
 .price-inputs{
@@ -347,7 +347,7 @@ div.dest-search-box input[type="text"]::placeholder {
     padding:12px 20px;
     border:none;
     border-radius:8px;
-    background:#2563EB;
+    background:#0c2237;
     color:#fff;
     cursor:pointer;
 }
@@ -373,10 +373,10 @@ div.dest-search-box input[type="text"]::placeholder {
 .sort-toggle{
     height:46px;
     padding:0 18px;
-    border:1px solid #2F6BFF;
+    border:1px solid #0c2237;
     border-radius:30px;
     background:#fff;
-    color:#2F6BFF;
+    color:#0c2237;
     cursor:pointer;
     font-size:14px;
     display:flex;
@@ -426,7 +426,7 @@ div.dest-search-box input[type="text"]::placeholder {
 }
 
 .sort-option.active{
-    background:#2F6BFF;
+    background:#0c2237;
     color:#fff;
 }
 
@@ -605,7 +605,7 @@ div.dest-search-box input[type="text"]::placeholder {
 }
 
 .page-link:hover{
-    color:#2563EB;
+    color:#0c2237;
 }
 
 /* Page Numbers */
@@ -630,7 +630,7 @@ div.dest-search-box input[type="text"]::placeholder {
 
 /* Active Page */
 .page-number.active{
-    background:#2563EB;
+    background:#363536;
     color:#fff;
     box-shadow:0 6px 15px rgba(37,99,235,.25);
 }
@@ -694,7 +694,7 @@ div.dest-search-box input[type="text"]::placeholder {
     
     display: inline-block;
     padding: 14px 45px;
-    background: #2563EB;
+    background: #0c2237;
     color: #ffffff;
     text-decoration: none;
     border-radius: 6px; 
@@ -705,7 +705,7 @@ div.dest-search-box input[type="text"]::placeholder {
 }
 
 .booking-btn:hover {
-    background: #1d4ed8;
+    background: #0c2237;
 }
 
 

@@ -17,7 +17,7 @@
     justify-content:space-between;
     align-items:center;
     padding:0 70px;
-    background:#0c2237;
+    background: #0c2237;
     border-bottom:none;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .search-box i{
-    color:#2563EB;
+    color:#0c2237;
     font-size:16px;
     margin-right:10px;
 }
@@ -62,7 +62,7 @@
 }
 
 .search-box input::placeholder{
-    color:#2563EB;
+    color:#0c2237;
 }
 
 /* =========================
@@ -77,7 +77,7 @@
 
 .nav-links a{
     text-decoration:none;
-    color:#2d67ff;
+    color:#ffffff;
     font-size:15px;
     font-weight:500;
 }
@@ -222,7 +222,7 @@
 }
 
 .menu-social a:hover{
-    background:#2563eb;
+    background:#0c2237;
     color:#fff;
 }
 

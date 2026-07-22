@@ -1404,7 +1404,6 @@ body{
 /* Navbar - mobile */
 
 .navbar{
-    position:relative;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -1423,13 +1422,10 @@ body{
 
 /* Hamburger (Left) */
 .hamburger{
-    order:1;
+    width:60px;
     display:flex;
+    justify-content:flex-start;
     align-items:center;
-    justify-content:center;
-    background:none;
-    border:none;
-    padding:0;
 }
 
 .hamburger-img{
@@ -1439,7 +1435,6 @@ body{
 
 /* Logo (Center) */
 .logo{
-    order:2;
     flex:1;
     display:flex;
     justify-content:center;
@@ -1447,60 +1442,52 @@ body{
 }
 
 .logo img{
-    height:65px; 
+    height:60px;
     width:auto;
 }
 
 /* Search Icon (Right) */
 /* Search Box */
-.nav-search{
-    order:3;
+.mobile-search-bar{
+    width:40px;
+    height:40px;
     display:flex;
     align-items:center;
     justify-content:flex-end;
-    width:40px;
-    height:40px;
-    padding:0 10px;
-    border-radius:25px;
-    background:rgba(255,255,255,.15);
     overflow:hidden;
-    transition:all .35s ease;
-    cursor:pointer;
+    transition:.3s;
 }
 
-/* Expanded state */
-.nav-search.active{
-    width:180px;
-}
-
-/* Input */
-.nav-search input{
+.mobile-search-bar input{
     width:0;
+    opacity:0;
     border:none;
     outline:none;
     background:transparent;
     color:#fff;
-    font-size:14px;
-    transition:all .35s ease;
-    opacity:0;
+    transition:.3s;
 }
 
-.nav-search.active input{
-    width:130px;
+.mobile-search-bar.active{
+    width:180px;
+    background:rgba(255,255,255,.15);
+    border-radius:20px;
+    padding:0 12px;
+}
+
+.mobile-search-bar.active input{
+    width:120px;
     opacity:1;
-    margin-right:8px;
+    margin-left:10px;
 }
 
-.nav-search input::placeholder{
-    color:rgba(255,255,255,.8);
+.mobile-icon-img{
+    width:20px;
+    height:20px;
+    cursor:pointer;
 }
 
-/* Icon */
-.nav-search i{
-    font-size:18px;
-    color:#fff;
-    flex-shrink:0;
-}
+
 
 /* Hide desktop Sign Up */
 .signup{

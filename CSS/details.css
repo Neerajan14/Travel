@@ -366,7 +366,7 @@ body{
 
 .subtotal h2{
     font-size:42px;
-    color:#2E5BFF;
+    color: #0c2237;
     font-weight:700;
 }
 
@@ -375,7 +375,7 @@ body{
     height:52px;
     border:none;
     border-radius:8px;
-    background:#2E5BFF;
+    background:#0c2237;
     color:#fff;
     font-size:16px;
     font-weight:600;
@@ -385,7 +385,7 @@ body{
 }
 
 .book-btn:hover{
-    background:#1D4ED8;
+    background:#061626;
 }
 
 .outline-btn{
@@ -431,7 +431,7 @@ body{
 .itinerary-section h2{
     font-size:24px;
     font-weight:700;
-    color:#16214A;
+    color:#000000;
     margin-bottom:35px;
 }
 
@@ -447,7 +447,7 @@ body{
     left:27px;          
     top:28px;          
     bottom:28px;        
-    border-left:2px dotted #2E5BFF;
+    border-left:2px dotted #0c2237;
 }
 
 .timeline-item{
@@ -476,7 +476,7 @@ body{
 }
 
 .toggle-btn{
-    background:#2E5BFF;
+    background:#0c2237;
     color:#fff;
     border:none;
     padding:12px 24px;
@@ -488,7 +488,7 @@ body{
 }
 
 .toggle-btn:hover{
-    background:#1d47e0;
+    background:#0c2237;
 }
 
 
@@ -496,7 +496,7 @@ body{
 .circle{
     width:30px;
     height:30px;
-    background:#2E5BFF;
+    background:#0c2237;
     border-radius:50%;
     flex-shrink:0;
     position:relative;
@@ -507,7 +507,7 @@ body{
     width:18px;
     height:18px;
     background:#fff;
-    border:4px solid #2E5BFF;
+    border:4px solid #0c2237;
     margin:6px;
 }
 
@@ -518,11 +518,19 @@ body{
     margin-bottom:12px;
 }
 
-.content p{
-    font-size:15px;
-    line-height:1.8;
-    color:#5E6472;
-    max-width:600px;
+.day-content ul{
+    padding-left:28px;
+    margin:0;
+}
+
+.day-content li{
+    margin-bottom:18px;
+    line-height:1.9;
+    color:#555;
+}
+
+.day-content strong{
+    color:#222;
 }
 
 
@@ -584,7 +592,7 @@ body{
     content:"•";
     position:absolute;
     left:0;
-    color:#0077CC;
+    color: #0c2237;
     font-weight:700;
 }
 
@@ -596,7 +604,7 @@ body{
     margin-top:16px;
     padding:12px 14px;
     background:#F8F8F8;
-    border-left:3px solid #0077CC;
+    border-left:3px solid #0c2237;
     border-radius:4px;
     font-size:13px;
     color:#555;
