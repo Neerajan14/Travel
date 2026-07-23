@@ -56,9 +56,7 @@
     text-decoration:none;
 }
 
-.breadcrumb a:hover{
-    color:#ff7a00;;
-}
+
 
 
 
@@ -136,7 +134,7 @@
 }
 
 .blog-info a{
-    color:#0077CC;
+    color:#0c2237;
     text-decoration:none;
     font-weight:500;
     font-size: 14px;
@@ -172,7 +170,7 @@
 
     font-size:14px;
     font-family:"Inter", sans-serif;
-    color:#555;
+    color:#555555;
 }
 
 .list-search-box input::placeholder{
@@ -184,7 +182,7 @@
     height:100%;
 
     border:none;
-    background:#0D83E6;
+    background:#0c2237;
 
     display:flex;
     justify-content:center;
@@ -195,7 +193,7 @@
 }
 
 .list-search-box button:hover{
-    background:#0A73CB;
+    background:#0c2237;
 }
 
 .list-search-box button img{
@@ -205,7 +203,7 @@
 }
 
 .list-search-box button:hover{
-    background:#0f6ec0;
+    background:#0c2237;
 }
 
 .sidebar input{
@@ -359,7 +357,7 @@
     border:none;
     border-radius:8px;
 
-    background:#1B84E7;
+    background:#0c2237;
     color:#fff;
 
     font-size:14px;
@@ -420,7 +418,7 @@
     border:none;
     border-radius:6px;
 
-    background:#1988E8;
+    background:#0c2237;
     color:#fff;
 
     font-family:"Inter", sans-serif;
@@ -432,7 +430,7 @@
 }
 
 .subscribe:hover{
-    background:#0F73C8;
+    background:#0c2237;
 }
 
 
@@ -461,7 +459,7 @@
 
 /* Active Page Style */
 .pagination a.active {
-    background-color: #0077CC; 
+    background-color: #0c2237; 
     color: white;
 }
 

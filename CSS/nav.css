@@ -186,7 +186,7 @@
 
 .contact-link{
     border-bottom:none;
-    color:#2563EB;
+    color:#0c2237;
 }
 
 .side-menu-social{
@@ -254,14 +254,14 @@
         max-width:180px;
         height:40px;
         background:#fff;
-        border:2px solid #2563EB;
+        border:2px solid #0c2237;
         border-radius:25px;
         padding:0 12px;
         align-items:center;
     }
 
     .search-box i{
-        color:#2563EB;
+        color:#0c2237;
         font-size:14px;
         margin-right:8px;
     }
@@ -272,7 +272,7 @@
     }
 
     .search-box input::placeholder{
-        color:#2563EB;
+        color:#0c2237;
         font-size:12px;
     }
 

@@ -206,21 +206,21 @@ body{
 .tour-overview h2{
     font-size:24px;
     font-weight:700;
-    color:#16214A;
+    color:#05073C;
     margin-bottom:20px;
 }
 
 .tour-overview p{
     font-size:15px;
     line-height:1.8;
-    color:#5E6472;
+    color:#05073C;
     margin-bottom:35px;
 }
 
 .tour-overview h3{
     font-size:20px;
     font-weight:700;
-    color:#16214A;
+    color:#05073C;
     margin-bottom:20px;
 }
 
@@ -232,7 +232,7 @@ body{
 .tour-overview li{
     font-size:15px;
     line-height:1.9;
-    color:#5E6472;
+    color:#05073C;
     margin-bottom:16px;
 }
 
@@ -262,7 +262,7 @@ body{
 .included-section h2{
     font-size:24px;
     font-weight:700;
-    color:#16214A;
+    color:#05073C;
     margin-bottom:30px;
 }
 
@@ -298,7 +298,7 @@ body{
 .exclude-item span{
     font-size:15px;
     line-height:1.7;
-    color:#3F4A6B;
+    color:#05073C;
 }
 
 
@@ -463,6 +463,19 @@ body{
 }
 
 
+.timeline-item:last-child .circle::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 40px;        
+    background: #fff;    
+    z-index: 3;
+}
+
+
 .extra-item{
     display:none;
 }
@@ -512,9 +525,10 @@ body{
 }
 
 .content h3{
-    font-size:18px;
-    font-weight:700;
-    color:#2D3561;
+    font-family: "Inter";
+    font-size:16px;
+    font-weight:500;
+    color:#05073C;
     margin-bottom:12px;
 }
 
@@ -524,13 +538,25 @@ body{
 }
 
 .day-content li{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14.53px;
     margin-bottom:18px;
+    padding: 10px;
     line-height:1.9;
-    color:#555;
+    color:#05073C;
 }
 
 .day-content strong{
-    color:#222;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+    color:#05073C;
+}
+
+.day-content p{
+    font-weight: 400;
+    font-size: 15px;
 }
 
 
@@ -845,6 +871,17 @@ body{
 
 .slider-buttons img{
     width:18px;
+}
+
+
+.tour-card-link{
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
+
+.tour-card-link:hover{
+    text-decoration:none;
 }
 
 
