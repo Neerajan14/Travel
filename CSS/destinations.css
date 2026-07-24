@@ -709,6 +709,65 @@ div.dest-search-box input[type="text"]::placeholder {
 }
 
 
+/* WhatsApp Floating Button */
+.whatsapp-container{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:9999;
+    display:flex;
+    align-items:flex-end;
+}
+
+.whatsapp-btn{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
+.whatsapp-message{
+    background:#fff;
+    color:#333;
+    padding:14px 18px;
+    border-radius:14px;
+    margin-right:12px;
+    font-size:15px;
+    font-weight:500;
+    box-shadow:0 8px 25px rgba(0,0,0,.18);
+    position:relative;
+    white-space:nowrap;
+}
+
+.close-btn{
+    margin-left:15px;
+    color:#777;
+    font-size:18px;
+}
+
+.whatsapp-icon{
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.whatsapp-icon i{
+    color:#fff;
+    font-size:32px;
+}
+
+.whatsapp-icon:hover{
+    transform:scale(1.08);
+}
+
+
+
+
 
 
 /* Mobile views */

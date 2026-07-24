@@ -152,12 +152,16 @@ body{
 
 /* ===== Slide-in Main Menu ===== */
 .menu-overlay {
-  position: absolute; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; 
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease;
+  transition:.3s;
   z-index: 100;
 }
 
@@ -167,7 +171,7 @@ body{
 }
 
 .side-menu {
-  position: absolute; 
+  position: fixed; 
   top: 0;
   right: -320px;
   width: 300px;
@@ -992,7 +996,7 @@ body{
 
 .testimonial-card h4{
 
-    color:#2563EB;
+    color:#05073C;
 
     margin-bottom:18px;
 
@@ -1049,7 +1053,7 @@ body{
 
     font-size:15px;
 
-    color:#3464F6;
+    color:#05073C;
 
     font-weight: 500;
 
@@ -1396,51 +1400,40 @@ body{
     color: #666;
 }
 
-
-/* Floating Chat Buttons */
-.floating-chat{
+/* WhatsApp Floating Button */
+/* WhatsApp Floating Button */
+.whatsapp-container{
     position: fixed;
-    right: 20px;      /* Right side */
-    bottom: 20px;     /* Bottom */
+    right: 20px;
+    bottom: 20px;
+    z-index: 999999;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    /* Remove any background */
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    width: auto;
-    height: auto;
-
-    z-index: 99999;
+    align-items: center;
+    pointer-events: auto;
 }
 
-.chat-icon{
+.whatsapp-btn{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.whatsapp-icon{
     width: 58px;
     height: 58px;
     border-radius: 50%;
+    background: #25D366;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-decoration: none;
-    color: #fff;
-    font-size: 32px;
-    box-shadow: 0 6px 15px rgba(0,0,0,.25);
-    transition: .3s;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
 }
 
-.chat-icon:hover{
-    transform: scale(1.1);
+.whatsapp-icon i{
+    color:#fff;
+    font-size:32px;
 }
 
-.whatsapp{
-    background:#25D366;
-}
-
-.viber{
-    background:#7360F2;
-}
 
 
 
@@ -1528,8 +1521,8 @@ body{
 }
 
 .mobile-icon-img{
-    width:20px;
-    height:20px;
+    width:15px;
+    height:15px;
     cursor:pointer;
 }
 
@@ -2034,24 +2027,8 @@ img{
     }
 
 
-     .floating-chat{
-        position: fixed;
-        right: 12px;
-        bottom: 90px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        z-index: 99999;
-    }
 
-    .chat-icon{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 48px;
-        height: 48px;
-        font-size: 26px;
-    }
+
 
 }
 

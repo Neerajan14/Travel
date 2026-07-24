@@ -63,7 +63,7 @@
 }
 
 .search-box input::placeholder{
-    color:#2563EB;
+    color:#05073C;
 }
 
 /* =========================
@@ -78,128 +78,12 @@
 
 .nav-links a{
     text-decoration:none;
-    color:#2d67ff;
+    color:#05073C;
     font-size:15px;
     font-weight:500;
 }
 
-/* =========================
-   Menu Button
-========================= */
 
-.menu-btn{
-    background:none;
-    border:none;
-    cursor:pointer;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:0;
-}
-
-.menu-btn img{
-    width:26px;
-    height:26px;
-    display:block;
-}
-
-/* =========================
-   Overlay
-========================= */
-
-.menu-overlay{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.45);
-    opacity:0;
-    visibility:hidden;
-    transition:.3s;
-    z-index:999;
-}
-
-.menu-overlay.active{
-    opacity:1;
-    visibility:visible;
-}
-
-/* =========================
-   Side Menu
-========================= */
-
-.side-menu{
-    position:fixed;
-    top:0;
-    right:-320px;
-    width:300px;
-    height:100vh;
-    background:#fff;
-    padding:30px 25px;
-    display:flex;
-    flex-direction:column;
-    transition:right .35s ease;
-    z-index:1000;
-    box-shadow:-5px 0 20px rgba(0,0,0,.15);
-}
-
-.side-menu.active{
-    right:0;
-}
-
-.side-menu-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:30px;
-}
-
-.side-menu-header h3{
-    font-size:24px;
-    color:#1d2951;
-}
-
-.close-menu{
-    width:36px;
-    height:36px;
-    border:none;
-    background:#f3f3f3;
-    border-radius:50%;
-    cursor:pointer;
-    font-size:24px;
-    line-height:36px;
-}
-
-.side-menu-links{
-    display:flex;
-    flex-direction:column;
-}
-
-.side-menu-links a{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    text-decoration:none;
-    color:#333;
-    padding:18px 0;
-    border-bottom:1px solid #eee;
-    font-size:16px;
-    font-weight:500;
-}
-
-.contact-link{
-    border-bottom:none;
-    color:#2563EB;
-}
-
-.side-menu-social{
-    display:flex;
-    gap:18px;
-    margin-top:auto;
-}
-
-.side-menu-social img{
-    width:22px;
-    height:22px;
-}
 
 
 .contact-hero{
@@ -255,7 +139,7 @@
 }
 
 .breadcrumb a:hover{
-    color:#ffb703;
+    color:#ffffff;
 }
 
 .breadcrumb span{
@@ -340,7 +224,7 @@
 .contact-form button{
     width:100%;
     border:none;
-    background:#2f5bea;
+    background:#05073C;
     color:#fff;
     padding:15px;
     font-size:16px;
@@ -350,7 +234,7 @@
 }
 
 .contact-form button:hover{
-    background:#2148c8;
+    background:#05073C;
 }
 
 /* Right */
@@ -445,7 +329,7 @@
     
     display: inline-block;
     padding: 14px 45px;
-    background: #2563EB;
+    background: #05073C;
     color: #ffffff;
     text-decoration: none;
     border-radius: 6px; 
@@ -456,7 +340,7 @@
 }
 
 .booking-btn:hover {
-    background: #1d4ed8;
+    background: #05073C;
 }
 
 
@@ -496,7 +380,7 @@
     }
 
 
-    @media(max-width:768px){
+   
 
 .contact-hero{
     height:220px;
@@ -574,4 +458,3 @@
 
 }
 
-}

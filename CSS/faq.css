@@ -154,7 +154,7 @@ body{
 }
 
 .faq-tab:hover{
-    background:#2F80ED;
+    background:#05073C;
     color:#fff;
 }
 
@@ -163,7 +163,7 @@ body{
     height:38px;
     border-radius:50%;
     padding:0;
-    background:#2F80ED;
+    background:#05073C;
     color:#fff;
     display:flex;
     align-items:center;
@@ -318,7 +318,7 @@ body{
     
     display: inline-block;
     padding: 14px 45px;
-    background: #2563EB;
+    background: #05073C;
     color: #ffffff;
     text-decoration: none;
     border-radius: 6px; 
