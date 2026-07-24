@@ -232,7 +232,7 @@ body{
 
 
 .side-menu-links a:first-child {
-  color: #3366ff;
+  color: #05073C;
 }
 
 .side-menu-links a span {
@@ -1397,6 +1397,52 @@ body{
 }
 
 
+/* Floating Chat Buttons */
+.floating-chat{
+    position: fixed;
+    right: 20px;      /* Right side */
+    bottom: 20px;     /* Bottom */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    /* Remove any background */
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+
+    z-index: 99999;
+}
+
+.chat-icon{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    box-shadow: 0 6px 15px rgba(0,0,0,.25);
+    transition: .3s;
+}
+
+.chat-icon:hover{
+    transform: scale(1.1);
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.viber{
+    background:#7360F2;
+}
+
+
 
 @media (max-width:768px){
 
@@ -1693,7 +1739,7 @@ img{
 
 .categories button.active{
     background:#fff;
-    color:#3b5bff;
+    color:#05073C;
     box-shadow:0 3px 8px rgba(0,0,0,.08);
 }
 
@@ -1988,14 +2034,24 @@ img{
     }
 
 
+     .floating-chat{
+        position: fixed;
+        right: 12px;
+        bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 99999;
+    }
 
-    
-
-   
-   
-
-
-    
+    .chat-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        font-size: 26px;
+    }
 
 }
 

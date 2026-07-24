@@ -23,8 +23,9 @@ body{
 }
 
 .title h1{
-    font-size:45px;
-    color:#222;
+    font-size:30px;
+    color:#05073C;
+    font-weight: 500;
 }
 
 .title p{
@@ -41,6 +42,8 @@ body{
 
 .section-heading h2{
     font-size:28px;
+    font-weight: 400;
+    
 }
 
 .section-heading a{

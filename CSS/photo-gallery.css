@@ -124,3 +124,61 @@ body{
     font-weight:bold;
 
 }
+
+
+@media (max-width: 768px){
+
+    .container{
+        width:94%;
+        padding:20px 0 40px;
+    }
+
+    .title{
+        margin-bottom:30px;
+    }
+
+    .title h1{
+        font-size:28px;
+    }
+
+    .title p{
+        font-size:14px;
+    }
+
+    .gallery{
+        grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+        gap:15px;
+    }
+
+    .gallery img{
+        height:150px;
+        border-radius:10px;
+    }
+
+    .close{
+        top:10px;
+        right:20px;
+        font-size:32px;
+    }
+
+    .back{
+        margin-bottom:20px;
+        font-size:14px;
+    }
+}
+
+@media (max-width: 420px){
+
+    .gallery{
+        grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+        gap:10px;
+    }
+
+    .gallery img{
+        height:120px;
+    }
+
+    .title h1{
+        font-size:22px;
+    }
+}

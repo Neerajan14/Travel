@@ -150,3 +150,70 @@ color:white;
 cursor:pointer;
 
 }
+
+
+@media (max-width: 768px){
+
+    .container{
+        width:94%;
+        padding:20px 0 40px;
+    }
+
+    .title{
+        margin-bottom:30px;
+    }
+
+    .title h1{
+        font-size:28px;
+    }
+
+    .title p{
+        font-size:14px;
+    }
+
+    .back{
+        margin-bottom:20px;
+        font-size:14px;
+    }
+
+    .gallery{
+        grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+        gap:15px;
+    }
+
+    .play{
+        width:55px;
+        height:55px;
+        font-size:22px;
+    }
+
+    iframe{
+        width:94%;
+        height:auto;
+        aspect-ratio:16/9;
+    }
+
+    .close{
+        top:10px;
+        right:20px;
+        font-size:32px;
+    }
+}
+
+@media (max-width: 420px){
+
+    .gallery{
+        grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+        gap:10px;
+    }
+
+    .play{
+        width:45px;
+        height:45px;
+        font-size:18px;
+    }
+
+    .title h1{
+        font-size:22px;
+    }
+}
