@@ -105,6 +105,24 @@ BLOG DETAILS
     color:#05073C;
 }
 
+.blog-content h3{
+    font-family: "Inter", sans-serif;
+    color:#000000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height:26px;
+    margin-bottom:22px;
+    
+
+}
+
+.blog-content strong{
+    font-family: "Inter", sans-serif;
+    color: #000000;
+    font-weight: 600;
+}
+
+
 .blog-content p{
     font-family: "Inter", sans-serif;
     color:#717171;
