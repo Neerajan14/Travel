@@ -47,9 +47,27 @@ body{
 }
 
 .section-heading a{
+    font-size: 14px;
+    font-weight: 400;
     text-decoration:none;
-    color:#0066ff;
+    color:#05073C;
     font-weight:bold;
+}
+
+.view-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.view-all img {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.view-all:hover img {
+    transform: translateX(5px);
 }
 
 .gallery-grid{

@@ -24,6 +24,8 @@ margin-bottom:50px;
 
 .title h1{
 font-size:42px;
+font-weight: 500;
+color: #05073C;
 }
 
 .title p{
@@ -35,7 +37,7 @@ color:#666;
 display:inline-block;
 margin-bottom:30px;
 text-decoration:none;
-color:#0d6efd;
+color:#05073C;
 font-weight:bold;
 }
 
